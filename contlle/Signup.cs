@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Net.Mail;
 using System.Data.OleDb;
 
 namespace contlle
@@ -20,14 +20,6 @@ namespace contlle
         }
 
         OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb");
-      /*  void GetUser()
-        {
-            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb");
-            OleDbDataAdapter da = new OleDbDataAdapter("SELECT *FROM User", con);
-            con.Open();
-            con.Close();
-        }*/
-
         private void button1_Click(object sender, EventArgs e)
         {
             /* con.Open();
@@ -90,7 +82,7 @@ namespace contlle
             // con.Close();
             //}*/
 
-            //
+            //open connection
             using (OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb"))
             {
                 con.Open();
@@ -100,6 +92,19 @@ namespace contlle
                 string pass1 = textBox4.Text.Trim();
                 string pass2 = textBox5.Text.Trim();
 
+                string checkQuery = "SELECT COUNT(*) FROM [Userz] WHERE [Emailz] = ?";
+                using (OleDbCommand checkCmd = new OleDbCommand(checkQuery, con))
+                {
+                    checkCmd.Parameters.Add("?", OleDbType.VarWChar, 255).Value = emal;
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Email is already registered.");
+                        return;
+                    }
+                }
+
+
                 // Validate user inputs
                 if (string.IsNullOrEmpty(nam) || string.IsNullOrEmpty(nmbe) || string.IsNullOrEmpty(emal) || string.IsNullOrEmpty(pass1) || string.IsNullOrEmpty(pass2))
                 {
@@ -107,21 +112,40 @@ namespace contlle
                     return;
                 }
 
+                //Checking email format ---
+                try
+                {
+                    var mail = new MailAddress(emal);
+
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Invalid email address.");
+                }
+
+                //----------------------------------------------------------------
+
                 if (pass1 != pass2)
                 {
                     MessageBox.Show("Passwords do not match.");
                     return;
                 }
+               // textBox4.PasswordChar = '*';
+                //textBox5.PasswordChar = '*';
 
-                string query = "INSERT INTO [Userz] ([Fullnamez], [Numberz], [Emailz], [Passwordz]) VALUES ( ?, ?, ?, ?)";
+               
+                //inserting records
+                string query = "INSERT INTO [Userz] ([Fullnamez], [Numberz], [Emailz], [Passwordz],[Roles]) VALUES ( ?, ?, ?, ?,?)";
 
                 using (OleDbCommand cmd = new OleDbCommand(query, con))
                 {
+                    string user = "User";
                     //cmd.Parameters.AddWithValue(" ");
                     cmd.Parameters.AddWithValue("?", nam);
                     cmd.Parameters.AddWithValue("?", nmbe);
                     cmd.Parameters.AddWithValue("?", emal);
                     cmd.Parameters.AddWithValue("?", pass1);
+                    cmd.Parameters.AddWithValue("?",user);
 
                     try
                     {
@@ -149,6 +173,14 @@ namespace contlle
             this.Hide();
             new Home().Show();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox4.PasswordChar = checkBox1.Checked ? '\0' : '*'; // '\0' shows the password, '*' hides it
+            textBox5.PasswordChar = checkBox1.Checked ? '\0' : '*'; // '\0' shows the password, '*' hides it
+        }
     }
+    
+    
 
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace contlle
 {
-    partial class Signup
+    partial class AdminSignup
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace contlle
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace contlle
             this.panel2 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,10 +74,20 @@ namespace contlle
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(13, 13);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(446, 516);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(446, 520);
+            this.panel1.TabIndex = 1;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(302, 346);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(102, 17);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "Show Password";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -141,7 +151,7 @@ namespace contlle
             this.button1.TabIndex = 8;
             this.button1.Text = "SIGNUP";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // linkLabel3
             // 
@@ -152,7 +162,6 @@ namespace contlle
             this.linkLabel3.TabIndex = 7;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Login";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -246,27 +255,15 @@ namespace contlle
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "HOME";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(302, 346);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 17);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "Show Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // Signup
+            // AdminSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 541);
+            this.ClientSize = new System.Drawing.Size(471, 544);
             this.Controls.Add(this.panel1);
-            this.Name = "Signup";
-            this.Text = "Signup";
+            this.Name = "AdminSignup";
+            this.Text = "AdminSignup";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -280,6 +277,8 @@ namespace contlle
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
@@ -294,11 +293,9 @@ namespace contlle
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

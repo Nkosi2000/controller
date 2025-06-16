@@ -35,9 +35,16 @@ namespace contlle
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -64,15 +71,8 @@ namespace contlle
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -107,7 +107,7 @@ namespace contlle
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(777, 402);
+            this.tabPage1.Size = new System.Drawing.Size(777, 388);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -152,6 +152,42 @@ namespace contlle
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "+";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(529, 281);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(217, 23);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "CLEAR";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(529, 251);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(217, 23);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "DELETE";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(529, 219);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(217, 23);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "UPDATE";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(529, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "REGISTER ";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(671, 12);
@@ -160,13 +196,16 @@ namespace contlle
             this.button1.TabIndex = 4;
             this.button1.Text = "SEARCH";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
+            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
             this.textBox1.Location = new System.Drawing.Point(18, 15);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(647, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "Search Email";
             // 
             // groupBox4
             // 
@@ -182,6 +221,27 @@ namespace contlle
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "INVERTER INFORMATION";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(121, 95);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(69, 20);
+            this.textBox14.TabIndex = 5;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(121, 61);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(69, 20);
+            this.textBox13.TabIndex = 4;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(121, 31);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(69, 20);
+            this.textBox12.TabIndex = 3;
             // 
             // label14
             // 
@@ -417,62 +477,14 @@ namespace contlle
             this.panel2.Size = new System.Drawing.Size(781, 54);
             this.panel2.TabIndex = 0;
             // 
-            // textBox12
+            // button6
             // 
-            this.textBox12.Location = new System.Drawing.Point(121, 31);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(69, 20);
-            this.textBox12.TabIndex = 3;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(121, 61);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(69, 20);
-            this.textBox13.TabIndex = 4;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(121, 95);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(69, 20);
-            this.textBox14.TabIndex = 5;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(529, 189);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "REGISTER ";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(529, 219);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(217, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "UPDATE";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(529, 251);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(529, 281);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(217, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "CLEAR";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button6.Location = new System.Drawing.Point(681, 28);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "BACK";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -483,15 +495,6 @@ namespace contlle
             this.label15.Size = new System.Drawing.Size(95, 24);
             this.label15.TabIndex = 3;
             this.label15.Text = "it-Charge";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(681, 28);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "BACK";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // AdminRqstSolar
             // 

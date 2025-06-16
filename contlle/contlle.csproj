@@ -61,6 +61,12 @@
     <Compile Include="AdminRqstSolar.Designer.cs">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSignup.Designer.cs">
+      <DependentUpon>AdminSignup.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminRqstSolar.resx">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSignup.resx">
+      <DependentUpon>AdminSignup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>

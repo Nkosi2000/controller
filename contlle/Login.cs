@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
+using System.Security.Cryptography;
 using System.Data.OleDb;
 
 namespace contlle
@@ -19,42 +19,164 @@ namespace contlle
             InitializeComponent();
         }
 
+        public static string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-        
+
+
+            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\SlYA\source\repos\contlle\Database\Icontrol.accdb";
+             string query = "SELECT COUNT(*) FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
+            // string query2 = "SELECT COUNT(*) FROM [Admin] WHERE [Email] = ? AND [Password] = ?";
+         using (OleDbConnection con = new OleDbConnection(connectionString))
+             using (OleDbCommand cmd = new OleDbCommand(query,con))
+             {
+                 cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
+                 cmd.Parameters.AddWithValue("?", textBox2.Text.Trim());
+
+                 try
+                 {
+                     con.Open();
+                     int userCount = Convert.ToInt32(cmd.ExecuteScalar());
+
+                     if (userCount > 0)
+                     {
+                         MessageBox.Show("Login successful.");
+                         // Proceed to the main application form
+                         this.Hide();
+                         new UserHome().Show();
+                     }
+                     else
+                     {
+                         MessageBox.Show("Invalid username or password.");
+                     }
+                 }
+                 catch (Exception ex)
+                 {
+                     MessageBox.Show($"An error occurred: {ex.Message}");
+                 }
+             }
+
+        /* string query2 = "SELECT COUNT(*) FROM [Admin] WHERE [Email] = ? AND [Password] = ?";
+         using (OleDbConnection con2 = new OleDbConnection(connectionString))
+         using (OleDbCommand cmd = new OleDbCommand(query2, con2))
+         {
+             cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
+             cmd.Parameters.AddWithValue("?", textBox2.Text.Trim());
+
+             try
+             {
+                 con2.Open();
+                 int userCount = Convert.ToInt32(cmd.ExecuteScalar());
+
+                 if (userCount > 0)
+                 {
+                     MessageBox.Show("Login successful.");
+                     // Proceed to the main application form
+                     this.Hide();
+                     new AdminHome().Show();
+                 }
+                 else
+                 {
+                     MessageBox.Show("Invalid username or password.");
+                 }
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show($"An error occurred: {ex.Message}");
+             }
+         }*/
+            ///-----------------------------------------------------------------///
+            ///
+           
+            /*string hashedPassword = HashPassword(textBox2.Text.Trim());
+
+          
+            string query = "SELECT Roles FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
+            using (OleDbConnection con = new OleDbConnection(connectionString))
+            using (OleDbCommand cmd = new OleDbCommand(query, con))
             {
-                string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\SlYA\source\repos\contlle\Database\Icontrol.accdb";
-                string query = "SELECT COUNT(*) FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
+                cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
+                cmd.Parameters.AddWithValue("?", HashPassword(textBox2.Text.Trim()));
+                cmd.Parameters.AddWithValue("?", "Admin");
 
-                using (OleDbConnection con = new OleDbConnection(connectionString))
-                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                try
                 {
-                    cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
-                    cmd.Parameters.AddWithValue("?", textBox2.Text.Trim());
-
-                    try
+                    con.Open();
+                    var result = cmd.ExecuteScalar();
+                   
+                    if (result != DBNull.Value && result != null)
                     {
-                        con.Open();
-                        int userCount = Convert.ToInt32(cmd.ExecuteScalar());
-
-                        if (userCount > 0)
-                        {
-                            MessageBox.Show("Login successful.");
-                            // Proceed to the main application form
-                            this.Hide();
+                        string role = result.ToString();
+                        MessageBox.Show("Login successful.");
+                        this.Hide();
+                        if (role == "Admin")
+                            new AdminHome().Show();
+                        else if (role =="")
                             new UserHome().Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
+            }*/
+
+            ///---------------------------------------------------------///
+            ///
+           /* string query = "SELECT Rolez FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
+            using (OleDbConnection con = new OleDbConnection(connectionString))
+            using (OleDbCommand cmd = new OleDbCommand(query, con))
+            {
+                cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
+                cmd.Parameters.AddWithValue("?", HashPassword(textBox2.Text.Trim()));
+               // cmd.Parameters.AddWithValue("?", "Admin");
+
+                try
+                {
+                    con.Open();
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string role = reader["Rolez"].ToString();
+                            MessageBox.Show("Login successful.");
+                            this.Hide();
+                            if (role == "Admin")
+                                new AdminHome().Show();
+                            else
+                                new UserHome().Show();
                         }
                         else
                         {
                             MessageBox.Show("Invalid username or password.");
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"An error occurred: {ex.Message}");
-                    }
                 }
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
+            }*/
+
+
+
 
         }
 
