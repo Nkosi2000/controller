@@ -140,7 +140,7 @@ namespace contlle
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::contlle.Properties.Resources._3418133;
+            
             this.pictureBox2.Location = new System.Drawing.Point(373, 89);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(587, 490);
@@ -150,7 +150,7 @@ namespace contlle
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
+            
             this.pictureBox1.Location = new System.Drawing.Point(62, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 43);

@@ -33,71 +33,7 @@ namespace contlle
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\SlYA\source\repos\contlle\Database\Icontrol.accdb";
-             string query = "SELECT COUNT(*) FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
-            // string query2 = "SELECT COUNT(*) FROM [Admin] WHERE [Email] = ? AND [Password] = ?";
-         using (OleDbConnection con = new OleDbConnection(connectionString))
-             using (OleDbCommand cmd = new OleDbCommand(query,con))
-             {
-                 cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
-                 cmd.Parameters.AddWithValue("?", textBox2.Text.Trim());
-
-                 try
-                 {
-                     con.Open();
-                     int userCount = Convert.ToInt32(cmd.ExecuteScalar());
-
-                     if (userCount > 0)
-                     {
-                         MessageBox.Show("Login successful.");
-                         // Proceed to the main application form
-                         this.Hide();
-                         new UserHome().Show();
-                     }
-                     else
-                     {
-                         MessageBox.Show("Invalid username or password.");
-                     }
-                 }
-                 catch (Exception ex)
-                 {
-                     MessageBox.Show($"An error occurred: {ex.Message}");
-                 }
-             }
-
-        /* string query2 = "SELECT COUNT(*) FROM [Admin] WHERE [Email] = ? AND [Password] = ?";
-         using (OleDbConnection con2 = new OleDbConnection(connectionString))
-         using (OleDbCommand cmd = new OleDbCommand(query2, con2))
-         {
-             cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
-             cmd.Parameters.AddWithValue("?", textBox2.Text.Trim());
-
-             try
-             {
-                 con2.Open();
-                 int userCount = Convert.ToInt32(cmd.ExecuteScalar());
-
-                 if (userCount > 0)
-                 {
-                     MessageBox.Show("Login successful.");
-                     // Proceed to the main application form
-                     this.Hide();
-                     new AdminHome().Show();
-                 }
-                 else
-                 {
-                     MessageBox.Show("Invalid username or password.");
-                 }
-             }
-             catch (Exception ex)
-             {
-                 MessageBox.Show($"An error occurred: {ex.Message}");
-             }
-         }*/
+       c
             ///-----------------------------------------------------------------///
             ///
            

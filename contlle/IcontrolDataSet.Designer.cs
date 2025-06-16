@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace contlle {
+namespace controller {
     
     
     /// <summary>
@@ -2203,7 +2203,7 @@ namespace contlle {
         }
     }
 }
-namespace contlle.IcontrolDataSetTableAdapters {
+namespace controller.IcontrolDataSetTableAdapters {
     
     
     /// <summary>
@@ -2413,7 +2413,7 @@ namespace contlle.IcontrolDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::contlle.Properties.Settings.Default.IcontrolConnectionString;
+            this._connection.ConnectionString = global::controller.Properties.Settings.Default.IcontrolConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3013,7 +3013,7 @@ namespace contlle.IcontrolDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::contlle.Properties.Settings.Default.IcontrolConnectionString;
+            this._connection.ConnectionString = global::controller.Properties.Settings.Default.IcontrolConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3544,7 +3544,7 @@ namespace contlle.IcontrolDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::contlle.Properties.Settings.Default.IcontrolConnectionString;
+            this._connection.ConnectionString = global::controller.Properties.Settings.Default.IcontrolConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
