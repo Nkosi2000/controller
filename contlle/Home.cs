@@ -30,6 +30,19 @@ namespace contlle
             new Login().Show();
         }
 
-       
+        private void pnlhome_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logotext_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

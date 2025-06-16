@@ -145,6 +145,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RequestSolar.resx">
       <DependentUpon>RequestSolar.cs</DependentUpon>
@@ -183,6 +184,11 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\3418133.jpg" />
+    <None Include="Resources\49215.jpg" />
+    <None Include="Resources\e6a0c3b4-7081-49c9-aff8-b1d3f4544fed.jpg" />
+    <None Include="Resources\3d-abstract-flowing-twisted-strands.jpg" />
+    <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
