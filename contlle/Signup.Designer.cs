@@ -30,6 +30,9 @@ namespace contlle
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblwarning = new System.Windows.Forms.Label();
+            this.lnkTsCs = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,7 +54,6 @@ namespace contlle
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lnkTsCs = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +62,8 @@ namespace contlle
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblwarning);
             this.panel1.Controls.Add(this.lnkTsCs);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -86,6 +90,49 @@ namespace contlle
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(714, 476);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(595, 136);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(11, 17);
+            this.label1.TabIndex = 21;
+            this.label1.Text = ".";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblwarning
+            // 
+            this.lblwarning.AutoSize = true;
+            this.lblwarning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblwarning.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblwarning.ForeColor = System.Drawing.Color.White;
+            this.lblwarning.Location = new System.Drawing.Point(595, 87);
+            this.lblwarning.Name = "lblwarning";
+            this.lblwarning.Size = new System.Drawing.Size(11, 17);
+            this.lblwarning.TabIndex = 20;
+            this.lblwarning.Text = ".";
+            this.lblwarning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lnkTsCs
+            // 
+            this.lnkTsCs.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkTsCs.AutoSize = true;
+            this.lnkTsCs.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkTsCs.LinkArea = new System.Windows.Forms.LinkArea(42, 35);
+            this.lnkTsCs.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkTsCs.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkTsCs.Location = new System.Drawing.Point(400, 335);
+            this.lnkTsCs.Name = "lnkTsCs";
+            this.lnkTsCs.Size = new System.Drawing.Size(240, 32);
+            this.lnkTsCs.TabIndex = 19;
+            this.lnkTsCs.TabStop = true;
+            this.lnkTsCs.Text = "By creating an account, you agree to the\r\nTerms of Service and Privacy Policy.";
+            this.lnkTsCs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lnkTsCs.UseCompatibleTextRendering = true;
             // 
             // panel3
             // 
@@ -177,6 +224,7 @@ namespace contlle
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(342, 21);
             this.txtConfirmPassword.TabIndex = 14;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // lnkX
             // 
@@ -210,6 +258,7 @@ namespace contlle
             this.txtCreatePassword.Name = "txtCreatePassword";
             this.txtCreatePassword.Size = new System.Drawing.Size(342, 21);
             this.txtCreatePassword.TabIndex = 12;
+            this.txtCreatePassword.UseSystemPasswordChar = true;
             // 
             // txtEmailAddress
             // 
@@ -319,23 +368,6 @@ namespace contlle
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // lnkTsCs
-            // 
-            this.lnkTsCs.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkTsCs.AutoSize = true;
-            this.lnkTsCs.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkTsCs.LinkArea = new System.Windows.Forms.LinkArea(42, 35);
-            this.lnkTsCs.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkTsCs.LinkColor = System.Drawing.Color.SeaGreen;
-            this.lnkTsCs.Location = new System.Drawing.Point(400, 335);
-            this.lnkTsCs.Name = "lnkTsCs";
-            this.lnkTsCs.Size = new System.Drawing.Size(240, 32);
-            this.lnkTsCs.TabIndex = 19;
-            this.lnkTsCs.TabStop = true;
-            this.lnkTsCs.Text = "By creating an account, you agree to the\r\nTerms of Service and Privacy Policy.";
-            this.lnkTsCs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lnkTsCs.UseCompatibleTextRendering = true;
-            // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,5 +413,7 @@ namespace contlle
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.LinkLabel lnkTsCs;
+        private System.Windows.Forms.Label lblwarning;
+        private System.Windows.Forms.Label label1;
     }
 }

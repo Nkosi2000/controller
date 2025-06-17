@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
-using System.Data.OleDb;
 
 namespace contlle
 {
@@ -18,110 +19,41 @@ namespace contlle
         {
             InitializeComponent();
         }
-
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb");
-      /*  void GetUser()
-        {
-            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb");
-            OleDbDataAdapter da = new OleDbDataAdapter("SELECT *FROM User", con);
-            con.Open();
-            con.Close();
-        }*/
-
         private void button1_Click(object sender, EventArgs e)
         {
-            /* con.Open();
-             if (con.State == ConnectionState.Open)
-             {
-                 //try
-                 //{
-                     string name = textBox1.Text;
-                     string nmbe = textBox2.Text;
-                     string emal = textBox3.Text;
-                     string pass1 = textBox4.Text;
-                     string pass2 = textBox5.Text;
 
-                     if (name == null)
-                     {
-                         MessageBox.Show("Enter Name!");
-                     }
-                     if (nmbe == null)
-                     {
-                         MessageBox.Show("Enter Phone!");
-                     }
-                     if (emal == null)
-                     {
-                         MessageBox.Show("Enter Email!");
-                     }
-                     if (pass1 == null)
-                     {
-                         MessageBox.Show("Enter Password!");
-                     }
-                     if (pass2 == null)
-                     {
-                         MessageBox.Show("Enter Confirmed Password!");
-                     }
-                     if (pass2 != pass1)
-                     {
-                         MessageBox.Show("Password Do Not Match!");
-                     }
+            string connectionString = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
 
-                     string query = "Insert into User (ID,Fullname,Number,Email,Password) values ('" + textBox1.Text.Trim() + "','" + textBox2.Text.Trim() + "','" + textBox3.Text.Trim() + "','" + textBox4.Text.Trim() + "')";
-                  OleDbCommand cmd = new OleDbCommand(query, con);
-
-                /* cmd.Parameters.AddWithValue(@"Name", OleDbType.VarChar).Value = name;
-                 cmd.Parameters.AddWithValue(@"Number", OleDbType.VarChar).Value = nmbe;
-                 cmd.Parameters.AddWithValue(@"Email", OleDbType.VarChar).Value = emal;
-                 cmd.Parameters.AddWithValue(@"Password", OleDbType.VarChar).Value = pass1;
-                 cmd.ExecuteNonQuery();
-                 cmd.Parameters.AddWithValue("@fName", textBox1.Text);
-                     cmd.Parameters.AddWithValue("@num", textBox2.Text);
-                     cmd.Parameters.AddWithValue("@eml", textBox3.Text);
-                     cmd.Parameters.AddWithValue("@passW", textBox4.Text);*/
-            // cmd.ExecuteNonQuery();
-
-            //con.Open();
-
-            // }
-            // catch (Exception error)
-            // {
-            // MessageBox.Show($"Error: {ex.Message}");
-            //}
-            // con.Close();
-            //}*/
-
-            //
-            using (OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb"))
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();
-                string nam = txtFullName.Text.Trim();
-                string nmbe = txtPhoneNumber.Text.Trim();
-                string emal = txtEmailAddress.Text.Trim();
-                string pass1 = txtCreatePassword.Text.Trim();
-                string pass2 = txtConfirmPassword.Text.Trim();
+                string fullname = txtFullName.Text.Trim();
+                string phonenumber = txtPhoneNumber.Text.Trim();
+                string emailaddress = txtEmailAddress.Text.Trim();
+                string createpassword = txtCreatePassword.Text.Trim();
+                string confirmpassword = txtConfirmPassword.Text.Trim();
 
                 // Validate user inputs
-                if (string.IsNullOrEmpty(nam) || string.IsNullOrEmpty(nmbe) || string.IsNullOrEmpty(emal) || string.IsNullOrEmpty(pass1) || string.IsNullOrEmpty(pass2))
+                if (string.IsNullOrEmpty(fullname) || string.IsNullOrEmpty(phonenumber) || string.IsNullOrEmpty(emailaddress) || string.IsNullOrEmpty(createpassword) || string.IsNullOrEmpty(confirmpassword))
                 {
                     MessageBox.Show("All fields are required.");
                     return;
                 }
 
-                if (pass1 != pass2)
+                if (createpassword != confirmpassword)
                 {
                     MessageBox.Show("Passwords do not match.");
                     return;
                 }
 
-                string query = "INSERT INTO [Userz] ([Fullnamez], [Numberz], [Emailz], [Passwordz]) VALUES ( ?, ?, ?, ?)";
+                string query = "INSERT INTO [Users] ([FullName], [PhoneNumber], [EmailAddress], [Password]) VALUES (@FullName, @PhoneNumber, @EmailAddress, @Password)";
 
-                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    //cmd.Parameters.AddWithValue(" ");
-                    cmd.Parameters.AddWithValue("?", nam);
-                    cmd.Parameters.AddWithValue("?", nmbe);
-                    cmd.Parameters.AddWithValue("?", emal);
-                    cmd.Parameters.AddWithValue("?", pass1);
+                    cmd.Parameters.AddWithValue("FullName", fullname);
+                    cmd.Parameters.AddWithValue("PhoneNumber", phonenumber);
+                    cmd.Parameters.AddWithValue("EmailAddress", emailaddress);
+                    cmd.Parameters.AddWithValue("Password", confirmpassword);
 
                     try
                     {

@@ -30,6 +30,16 @@ namespace contlle
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lnkX = new System.Windows.Forms.LinkLabel();
+            this.lnkForgotEmailAddress = new System.Windows.Forms.LinkLabel();
+            this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.logotext = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -37,16 +47,6 @@ namespace contlle
             this.txtEmailAddress = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblEmailAddress = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblLogin = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.logotext = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
-            this.lnkForgotEmailAddress = new System.Windows.Forms.LinkLabel();
-            this.lnkX = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -77,110 +77,50 @@ namespace contlle
             this.panel1.Size = new System.Drawing.Size(711, 476);
             this.panel1.TabIndex = 0;
             // 
-            // label3
+            // lnkX
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(339, 419);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Don\'t have an account ?";
+            this.lnkX.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkX.AutoSize = true;
+            this.lnkX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkX.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lnkX.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkX.Location = new System.Drawing.Point(657, 22);
+            this.lnkX.Name = "lnkX";
+            this.lnkX.Size = new System.Drawing.Size(24, 25);
+            this.lnkX.TabIndex = 29;
+            this.lnkX.TabStop = true;
+            this.lnkX.Text = "x";
+            this.lnkX.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkX_LinkClicked);
             // 
-            // linkLabel1
+            // lnkForgotEmailAddress
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.SeaGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(470, 418);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(44, 16);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Signup";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lnkForgotEmailAddress.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkForgotEmailAddress.AutoSize = true;
+            this.lnkForgotEmailAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkForgotEmailAddress.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkForgotEmailAddress.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkForgotEmailAddress.Location = new System.Drawing.Point(339, 177);
+            this.lnkForgotEmailAddress.Name = "lnkForgotEmailAddress";
+            this.lnkForgotEmailAddress.Size = new System.Drawing.Size(124, 16);
+            this.lnkForgotEmailAddress.TabIndex = 27;
+            this.lnkForgotEmailAddress.TabStop = true;
+            this.lnkForgotEmailAddress.Text = "Forgot email address?";
+            this.lnkForgotEmailAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnLogin
+            // lnkForgotPassword
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnLogin.FlatAppearance.BorderSize = 2;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnLogin.Location = new System.Drawing.Point(443, 341);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(123, 41);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Location = new System.Drawing.Point(339, 253);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(342, 20);
-            this.txtPassword.TabIndex = 5;
-            // 
-            // txtEmailAddress
-            // 
-            this.txtEmailAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmailAddress.Location = new System.Drawing.Point(339, 154);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(342, 20);
-            this.txtEmailAddress.TabIndex = 4;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(339, 237);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(56, 13);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Password:";
-            // 
-            // lblEmailAddress
-            // 
-            this.lblEmailAddress.AutoSize = true;
-            this.lblEmailAddress.Location = new System.Drawing.Point(339, 138);
-            this.lblEmailAddress.Name = "lblEmailAddress";
-            this.lblEmailAddress.Size = new System.Drawing.Size(75, 13);
-            this.lblEmailAddress.TabIndex = 2;
-            this.lblEmailAddress.Text = "Email address:";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.panel2.Location = new System.Drawing.Point(91, 7);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(537, 3);
-            this.panel2.TabIndex = 18;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.panel3.Location = new System.Drawing.Point(91, 466);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(537, 3);
-            this.panel3.TabIndex = 19;
-            // 
-            // lblLogin
-            // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblLogin.Location = new System.Drawing.Point(467, 58);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(85, 33);
-            this.lblLogin.TabIndex = 21;
-            this.lblLogin.Text = "Login";
+            this.lnkForgotPassword.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkForgotPassword.AutoSize = true;
+            this.lnkForgotPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkForgotPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkForgotPassword.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkForgotPassword.Location = new System.Drawing.Point(339, 276);
+            this.lnkForgotPassword.Name = "lnkForgotPassword";
+            this.lnkForgotPassword.Size = new System.Drawing.Size(102, 16);
+            this.lnkForgotPassword.TabIndex = 26;
+            this.lnkForgotPassword.TabStop = true;
+            this.lnkForgotPassword.Text = "Forgot password?";
+            this.lnkForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -233,50 +173,111 @@ namespace contlle
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 
-            // lnkForgotPassword
+            // lblLogin
             // 
-            this.lnkForgotPassword.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkForgotPassword.AutoSize = true;
-            this.lnkForgotPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkForgotPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkForgotPassword.LinkColor = System.Drawing.Color.SeaGreen;
-            this.lnkForgotPassword.Location = new System.Drawing.Point(339, 276);
-            this.lnkForgotPassword.Name = "lnkForgotPassword";
-            this.lnkForgotPassword.Size = new System.Drawing.Size(102, 16);
-            this.lnkForgotPassword.TabIndex = 26;
-            this.lnkForgotPassword.TabStop = true;
-            this.lnkForgotPassword.Text = "Forgot password?";
-            this.lnkForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblLogin.Location = new System.Drawing.Point(467, 58);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(85, 33);
+            this.lblLogin.TabIndex = 21;
+            this.lblLogin.Text = "Login";
             // 
-            // lnkForgotEmailAddress
+            // panel3
             // 
-            this.lnkForgotEmailAddress.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkForgotEmailAddress.AutoSize = true;
-            this.lnkForgotEmailAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkForgotEmailAddress.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkForgotEmailAddress.LinkColor = System.Drawing.Color.SeaGreen;
-            this.lnkForgotEmailAddress.Location = new System.Drawing.Point(339, 177);
-            this.lnkForgotEmailAddress.Name = "lnkForgotEmailAddress";
-            this.lnkForgotEmailAddress.Size = new System.Drawing.Size(124, 16);
-            this.lnkForgotEmailAddress.TabIndex = 27;
-            this.lnkForgotEmailAddress.TabStop = true;
-            this.lnkForgotEmailAddress.Text = "Forgot email address?";
-            this.lnkForgotEmailAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel3.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.panel3.Location = new System.Drawing.Point(91, 466);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(537, 3);
+            this.panel3.TabIndex = 19;
             // 
-            // lnkX
+            // panel2
             // 
-            this.lnkX.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkX.AutoSize = true;
-            this.lnkX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkX.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkX.LinkColor = System.Drawing.Color.SeaGreen;
-            this.lnkX.Location = new System.Drawing.Point(657, 22);
-            this.lnkX.Name = "lnkX";
-            this.lnkX.Size = new System.Drawing.Size(24, 25);
-            this.lnkX.TabIndex = 29;
-            this.lnkX.TabStop = true;
-            this.lnkX.Text = "x";
-            this.lnkX.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkX_LinkClicked);
+            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.panel2.Location = new System.Drawing.Point(91, 7);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(537, 3);
+            this.panel2.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(339, 419);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Don\'t have an account ?";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.SeaGreen;
+            this.linkLabel1.Location = new System.Drawing.Point(470, 418);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(44, 16);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Signup";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnLogin.FlatAppearance.BorderSize = 2;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnLogin.Location = new System.Drawing.Point(443, 341);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(123, 41);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.Location = new System.Drawing.Point(339, 253);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(342, 20);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmailAddress.Location = new System.Drawing.Point(339, 154);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(342, 20);
+            this.txtEmailAddress.TabIndex = 4;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(339, 237);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(56, 13);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Password:";
+            // 
+            // lblEmailAddress
+            // 
+            this.lblEmailAddress.AutoSize = true;
+            this.lblEmailAddress.Location = new System.Drawing.Point(339, 138);
+            this.lblEmailAddress.Name = "lblEmailAddress";
+            this.lblEmailAddress.Size = new System.Drawing.Size(75, 13);
+            this.lblEmailAddress.TabIndex = 2;
+            this.lblEmailAddress.Text = "Email address:";
             // 
             // Login
             // 

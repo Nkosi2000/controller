@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace contlle
 {
@@ -22,14 +23,14 @@ namespace contlle
         {
         
             {
-                string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\SlYA\source\repos\contlle\Database\Icontrol.accdb";
-                string query = "SELECT COUNT(*) FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
+                string connectionString = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
+                string query = "SELECT COUNT(*) FROM [Users] WHERE [EmailAddress] = @EmailAddress AND [Password] = @Password";
 
-                using (OleDbConnection con = new OleDbConnection(connectionString))
-                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("?", txtEmailAddress.Text.Trim());
-                    cmd.Parameters.AddWithValue("?", txtPassword.Text.Trim());
+                    cmd.Parameters.AddWithValue("@EmailAddress", txtEmailAddress.Text.Trim());
+                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
 
                     try
                     {
@@ -38,7 +39,7 @@ namespace contlle
 
                         if (userCount > 0)
                         {
-                            MessageBox.Show("Login successful.");
+                            //MessageBox.Show("Login successful.");
                             // Proceed to the main application form
                             this.Hide();
                             new UserHome().Show();
