@@ -94,11 +94,11 @@ namespace contlle
             using (OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\SlYA\\source\\repos\\contlle\\Database\\Icontrol.accdb"))
             {
                 con.Open();
-                string nam = textBox1.Text.Trim();
-                string nmbe = textBox2.Text.Trim();
-                string emal = textBox3.Text.Trim();
-                string pass1 = textBox4.Text.Trim();
-                string pass2 = textBox5.Text.Trim();
+                string nam = txtFullName.Text.Trim();
+                string nmbe = txtPhoneNumber.Text.Trim();
+                string emal = txtEmailAddress.Text.Trim();
+                string pass1 = txtCreatePassword.Text.Trim();
+                string pass2 = txtConfirmPassword.Text.Trim();
 
                 // Validate user inputs
                 if (string.IsNullOrEmpty(nam) || string.IsNullOrEmpty(nmbe) || string.IsNullOrEmpty(emal) || string.IsNullOrEmpty(pass1) || string.IsNullOrEmpty(pass2))

@@ -30,48 +30,48 @@ namespace contlle
         private void InitializeComponent()
         {
             this.pnlhome = new System.Windows.Forms.Panel();
-            this.contactlink = new System.Windows.Forms.LinkLabel();
-            this.equipmentlink = new System.Windows.Forms.LinkLabel();
-            this.serviceslink = new System.Windows.Forms.LinkLabel();
-            this.aboutlink = new System.Windows.Forms.LinkLabel();
+            this.lnkContactUs = new System.Windows.Forms.LinkLabel();
+            this.lnkEquipment = new System.Windows.Forms.LinkLabel();
+            this.lnkServices = new System.Windows.Forms.LinkLabel();
+            this.lnkAbout = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblslogan = new System.Windows.Forms.Label();
-            this.loginlink = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lnkLogin = new System.Windows.Forms.LinkLabel();
+            this.lblAlreadyHaveAnAccount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
-            this.learnmore = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnLearnMore = new System.Windows.Forms.Button();
             this.btnSignup = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlhome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlhome
             // 
             this.pnlhome.BackColor = System.Drawing.Color.White;
-            this.pnlhome.Controls.Add(this.contactlink);
-            this.pnlhome.Controls.Add(this.equipmentlink);
-            this.pnlhome.Controls.Add(this.serviceslink);
-            this.pnlhome.Controls.Add(this.aboutlink);
+            this.pnlhome.Controls.Add(this.lnkContactUs);
+            this.pnlhome.Controls.Add(this.lnkEquipment);
+            this.pnlhome.Controls.Add(this.lnkServices);
+            this.pnlhome.Controls.Add(this.lnkAbout);
             this.pnlhome.Controls.Add(this.panel3);
             this.pnlhome.Controls.Add(this.label3);
             this.pnlhome.Controls.Add(this.label);
             this.pnlhome.Controls.Add(this.panel2);
             this.pnlhome.Controls.Add(this.panel1);
             this.pnlhome.Controls.Add(this.lblslogan);
-            this.pnlhome.Controls.Add(this.loginlink);
-            this.pnlhome.Controls.Add(this.label2);
+            this.pnlhome.Controls.Add(this.lnkLogin);
+            this.pnlhome.Controls.Add(this.lblAlreadyHaveAnAccount);
             this.pnlhome.Controls.Add(this.label1);
             this.pnlhome.Controls.Add(this.logotext);
-            this.pnlhome.Controls.Add(this.learnmore);
+            this.pnlhome.Controls.Add(this.btnLearnMore);
             this.pnlhome.Controls.Add(this.btnSignup);
             this.pnlhome.Controls.Add(this.btnLogin);
             this.pnlhome.Controls.Add(this.pictureBox1);
@@ -83,61 +83,65 @@ namespace contlle
             this.pnlhome.TabIndex = 0;
             this.pnlhome.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlhome_Paint);
             // 
-            // contactlink
+            // lnkContactUs
             // 
-            this.contactlink.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.contactlink.AutoSize = true;
-            this.contactlink.BackColor = System.Drawing.Color.Transparent;
-            this.contactlink.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactlink.LinkColor = System.Drawing.Color.SeaGreen;
-            this.contactlink.Location = new System.Drawing.Point(572, 54);
-            this.contactlink.Name = "contactlink";
-            this.contactlink.Size = new System.Drawing.Size(74, 17);
-            this.contactlink.TabIndex = 18;
-            this.contactlink.TabStop = true;
-            this.contactlink.Text = "Contact Us";
+            this.lnkContactUs.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkContactUs.AutoSize = true;
+            this.lnkContactUs.BackColor = System.Drawing.Color.Transparent;
+            this.lnkContactUs.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkContactUs.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkContactUs.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkContactUs.Location = new System.Drawing.Point(572, 54);
+            this.lnkContactUs.Name = "lnkContactUs";
+            this.lnkContactUs.Size = new System.Drawing.Size(74, 17);
+            this.lnkContactUs.TabIndex = 18;
+            this.lnkContactUs.TabStop = true;
+            this.lnkContactUs.Text = "Contact Us";
             // 
-            // equipmentlink
+            // lnkEquipment
             // 
-            this.equipmentlink.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.equipmentlink.AutoSize = true;
-            this.equipmentlink.BackColor = System.Drawing.Color.Transparent;
-            this.equipmentlink.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equipmentlink.LinkColor = System.Drawing.Color.SeaGreen;
-            this.equipmentlink.Location = new System.Drawing.Point(471, 54);
-            this.equipmentlink.Name = "equipmentlink";
-            this.equipmentlink.Size = new System.Drawing.Size(71, 17);
-            this.equipmentlink.TabIndex = 17;
-            this.equipmentlink.TabStop = true;
-            this.equipmentlink.Text = "Equipment";
+            this.lnkEquipment.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkEquipment.AutoSize = true;
+            this.lnkEquipment.BackColor = System.Drawing.Color.Transparent;
+            this.lnkEquipment.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkEquipment.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkEquipment.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkEquipment.Location = new System.Drawing.Point(471, 54);
+            this.lnkEquipment.Name = "lnkEquipment";
+            this.lnkEquipment.Size = new System.Drawing.Size(71, 17);
+            this.lnkEquipment.TabIndex = 17;
+            this.lnkEquipment.TabStop = true;
+            this.lnkEquipment.Text = "Equipment";
             // 
-            // serviceslink
+            // lnkServices
             // 
-            this.serviceslink.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.serviceslink.AutoSize = true;
-            this.serviceslink.BackColor = System.Drawing.Color.Transparent;
-            this.serviceslink.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.serviceslink.LinkColor = System.Drawing.Color.SeaGreen;
-            this.serviceslink.Location = new System.Drawing.Point(377, 54);
-            this.serviceslink.Name = "serviceslink";
-            this.serviceslink.Size = new System.Drawing.Size(59, 17);
-            this.serviceslink.TabIndex = 16;
-            this.serviceslink.TabStop = true;
-            this.serviceslink.Text = "Services";
+            this.lnkServices.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkServices.AutoSize = true;
+            this.lnkServices.BackColor = System.Drawing.Color.Transparent;
+            this.lnkServices.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkServices.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkServices.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkServices.Location = new System.Drawing.Point(377, 54);
+            this.lnkServices.Name = "lnkServices";
+            this.lnkServices.Size = new System.Drawing.Size(59, 17);
+            this.lnkServices.TabIndex = 16;
+            this.lnkServices.TabStop = true;
+            this.lnkServices.Text = "Services";
             // 
-            // aboutlink
+            // lnkAbout
             // 
-            this.aboutlink.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.aboutlink.AutoSize = true;
-            this.aboutlink.BackColor = System.Drawing.Color.Transparent;
-            this.aboutlink.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aboutlink.LinkColor = System.Drawing.Color.SeaGreen;
-            this.aboutlink.Location = new System.Drawing.Point(299, 54);
-            this.aboutlink.Name = "aboutlink";
-            this.aboutlink.Size = new System.Drawing.Size(45, 17);
-            this.aboutlink.TabIndex = 15;
-            this.aboutlink.TabStop = true;
-            this.aboutlink.Text = "About";
+            this.lnkAbout.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkAbout.AutoSize = true;
+            this.lnkAbout.BackColor = System.Drawing.Color.Transparent;
+            this.lnkAbout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkAbout.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkAbout.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkAbout.Location = new System.Drawing.Point(299, 54);
+            this.lnkAbout.Name = "lnkAbout";
+            this.lnkAbout.Size = new System.Drawing.Size(45, 17);
+            this.lnkAbout.TabIndex = 15;
+            this.lnkAbout.TabStop = true;
+            this.lnkAbout.Text = "About";
             // 
             // panel3
             // 
@@ -208,31 +212,31 @@ namespace contlle
             this.lblslogan.TabIndex = 11;
             this.lblslogan.Text = "Africa\'s leading Solar Power \r\nand Energy Provider.    ";
             // 
-            // loginlink
+            // lnkLogin
             // 
-            this.loginlink.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.loginlink.AutoSize = true;
-            this.loginlink.BackColor = System.Drawing.Color.Transparent;
-            this.loginlink.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginlink.LinkColor = System.Drawing.Color.SeaGreen;
-            this.loginlink.Location = new System.Drawing.Point(205, 504);
-            this.loginlink.Name = "loginlink";
-            this.loginlink.Size = new System.Drawing.Size(38, 16);
-            this.loginlink.TabIndex = 10;
-            this.loginlink.TabStop = true;
-            this.loginlink.Text = "Login.";
+            this.lnkLogin.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkLogin.AutoSize = true;
+            this.lnkLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lnkLogin.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkLogin.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkLogin.Location = new System.Drawing.Point(205, 504);
+            this.lnkLogin.Name = "lnkLogin";
+            this.lnkLogin.Size = new System.Drawing.Size(38, 16);
+            this.lnkLogin.TabIndex = 10;
+            this.lnkLogin.TabStop = true;
+            this.lnkLogin.Text = "Login.";
             // 
-            // label2
+            // lblAlreadyHaveAnAccount
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 504);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Already have an account?";
+            this.lblAlreadyHaveAnAccount.AutoSize = true;
+            this.lblAlreadyHaveAnAccount.BackColor = System.Drawing.Color.Transparent;
+            this.lblAlreadyHaveAnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblAlreadyHaveAnAccount.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlreadyHaveAnAccount.Location = new System.Drawing.Point(43, 504);
+            this.lblAlreadyHaveAnAccount.Name = "lblAlreadyHaveAnAccount";
+            this.lblAlreadyHaveAnAccount.Size = new System.Drawing.Size(156, 16);
+            this.lblAlreadyHaveAnAccount.TabIndex = 9;
+            this.lblAlreadyHaveAnAccount.Text = "Already have an account?";
             // 
             // label1
             // 
@@ -265,31 +269,20 @@ namespace contlle
             this.logotext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.logotext.Click += new System.EventHandler(this.logotext_Click);
             // 
-            // learnmore
+            // btnLearnMore
             // 
-            this.learnmore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.learnmore.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.learnmore.FlatAppearance.BorderSize = 2;
-            this.learnmore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.learnmore.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.learnmore.ForeColor = System.Drawing.Color.SeaGreen;
-            this.learnmore.Location = new System.Drawing.Point(186, 446);
-            this.learnmore.Name = "learnmore";
-            this.learnmore.Size = new System.Drawing.Size(123, 41);
-            this.learnmore.TabIndex = 8;
-            this.learnmore.Text = "Learn More";
-            this.learnmore.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::contlle.Properties.Resources._3418133;
-            this.pictureBox2.Location = new System.Drawing.Point(373, 75);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(587, 490);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.btnLearnMore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLearnMore.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnLearnMore.FlatAppearance.BorderSize = 2;
+            this.btnLearnMore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLearnMore.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLearnMore.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLearnMore.Location = new System.Drawing.Point(186, 446);
+            this.btnLearnMore.Name = "btnLearnMore";
+            this.btnLearnMore.Size = new System.Drawing.Size(123, 41);
+            this.btnLearnMore.TabIndex = 8;
+            this.btnLearnMore.Text = "Learn More";
+            this.btnLearnMore.UseVisualStyleBackColor = true;
             // 
             // btnSignup
             // 
@@ -305,7 +298,7 @@ namespace contlle
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(123, 41);
             this.btnSignup.TabIndex = 2;
-            this.btnSignup.Text = "SIGNUP";
+            this.btnSignup.Text = "Signup";
             this.btnSignup.UseVisualStyleBackColor = false;
             this.btnSignup.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -324,7 +317,7 @@ namespace contlle
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 41);
             this.btnLogin.TabIndex = 1;
-            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -337,6 +330,17 @@ namespace contlle
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::contlle.Properties.Resources._3418133;
+            this.pictureBox2.Location = new System.Drawing.Point(373, 75);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(587, 490);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // Home
             // 
@@ -353,8 +357,8 @@ namespace contlle
             this.Text = "Home";
             this.pnlhome.ResumeLayout(false);
             this.pnlhome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,19 +372,19 @@ namespace contlle
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button learnmore;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel loginlink;
+        private System.Windows.Forms.Button btnLearnMore;
+        private System.Windows.Forms.Label lblAlreadyHaveAnAccount;
+        private System.Windows.Forms.LinkLabel lnkLogin;
         private System.Windows.Forms.Label lblslogan;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.LinkLabel aboutlink;
-        private System.Windows.Forms.LinkLabel contactlink;
-        private System.Windows.Forms.LinkLabel equipmentlink;
-        private System.Windows.Forms.LinkLabel serviceslink;
+        private System.Windows.Forms.LinkLabel lnkAbout;
+        private System.Windows.Forms.LinkLabel lnkContactUs;
+        private System.Windows.Forms.LinkLabel lnkEquipment;
+        private System.Windows.Forms.LinkLabel lnkServices;
     }
 }
 

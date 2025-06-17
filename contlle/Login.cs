@@ -29,8 +29,8 @@ namespace contlle
                 using (OleDbConnection con = new OleDbConnection(connectionString))
                 using (OleDbCommand cmd = new OleDbCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
-                    cmd.Parameters.AddWithValue("?", textBox2.Text.Trim());
+                    cmd.Parameters.AddWithValue("?", txtEmailAddress.Text.Trim());
+                    cmd.Parameters.AddWithValue("?", txtPassword.Text.Trim());
 
                     try
                     {
@@ -65,6 +65,12 @@ namespace contlle
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Home().Show();
+        }
+
+        private void lnkX_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             new Home().Show();
