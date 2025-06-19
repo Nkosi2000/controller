@@ -30,36 +30,37 @@ namespace contlle
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnManageReports = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnTrackTransactions = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnTrackProcedures = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnMakeSubmitions = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnManageUsers = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblAdminDashboard = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel11.SuspendLayout();
             this.SuspendLayout();
@@ -67,13 +68,6 @@ namespace contlle
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 68);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -81,6 +75,186 @@ namespace contlle
             this.panel1.Size = new System.Drawing.Size(933, 572);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Silver;
+            this.panel10.Controls.Add(this.btnManageReports);
+            this.panel10.Location = new System.Drawing.Point(3, 308);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(228, 55);
+            this.panel10.TabIndex = 40;
+            // 
+            // btnManageReports
+            // 
+            this.btnManageReports.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnManageReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManageReports.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnManageReports.FlatAppearance.BorderSize = 0;
+            this.btnManageReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageReports.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageReports.ForeColor = System.Drawing.Color.White;
+            this.btnManageReports.Image = global::contlle.Properties.Resources.reports;
+            this.btnManageReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageReports.Location = new System.Drawing.Point(0, 0);
+            this.btnManageReports.Name = "btnManageReports";
+            this.btnManageReports.Size = new System.Drawing.Size(228, 55);
+            this.btnManageReports.TabIndex = 35;
+            this.btnManageReports.Text = "Manage Reports";
+            this.btnManageReports.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Silver;
+            this.panel9.Controls.Add(this.btnTrackTransactions);
+            this.panel9.Location = new System.Drawing.Point(3, 247);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(228, 55);
+            this.panel9.TabIndex = 39;
+            // 
+            // btnTrackTransactions
+            // 
+            this.btnTrackTransactions.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnTrackTransactions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrackTransactions.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnTrackTransactions.FlatAppearance.BorderSize = 0;
+            this.btnTrackTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrackTransactions.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrackTransactions.ForeColor = System.Drawing.Color.White;
+            this.btnTrackTransactions.Image = global::contlle.Properties.Resources.transaction;
+            this.btnTrackTransactions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrackTransactions.Location = new System.Drawing.Point(0, 0);
+            this.btnTrackTransactions.Name = "btnTrackTransactions";
+            this.btnTrackTransactions.Size = new System.Drawing.Size(228, 55);
+            this.btnTrackTransactions.TabIndex = 35;
+            this.btnTrackTransactions.Text = "Track Transactions";
+            this.btnTrackTransactions.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Silver;
+            this.panel8.Controls.Add(this.btnTrackProcedures);
+            this.panel8.Location = new System.Drawing.Point(3, 186);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(228, 55);
+            this.panel8.TabIndex = 38;
+            // 
+            // btnTrackProcedures
+            // 
+            this.btnTrackProcedures.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnTrackProcedures.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrackProcedures.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnTrackProcedures.FlatAppearance.BorderSize = 0;
+            this.btnTrackProcedures.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrackProcedures.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrackProcedures.ForeColor = System.Drawing.Color.White;
+            this.btnTrackProcedures.Image = global::contlle.Properties.Resources.procedure;
+            this.btnTrackProcedures.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrackProcedures.Location = new System.Drawing.Point(0, 0);
+            this.btnTrackProcedures.Name = "btnTrackProcedures";
+            this.btnTrackProcedures.Size = new System.Drawing.Size(228, 55);
+            this.btnTrackProcedures.TabIndex = 35;
+            this.btnTrackProcedures.Text = "Track Procedures";
+            this.btnTrackProcedures.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Silver;
+            this.panel7.Controls.Add(this.btnMakeSubmitions);
+            this.panel7.Location = new System.Drawing.Point(3, 125);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(228, 55);
+            this.panel7.TabIndex = 37;
+            // 
+            // btnMakeSubmitions
+            // 
+            this.btnMakeSubmitions.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnMakeSubmitions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMakeSubmitions.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnMakeSubmitions.FlatAppearance.BorderSize = 0;
+            this.btnMakeSubmitions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMakeSubmitions.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakeSubmitions.ForeColor = System.Drawing.Color.White;
+            this.btnMakeSubmitions.Image = global::contlle.Properties.Resources.submitdocuments;
+            this.btnMakeSubmitions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMakeSubmitions.Location = new System.Drawing.Point(0, 0);
+            this.btnMakeSubmitions.Name = "btnMakeSubmitions";
+            this.btnMakeSubmitions.Size = new System.Drawing.Size(228, 55);
+            this.btnMakeSubmitions.TabIndex = 35;
+            this.btnMakeSubmitions.Text = "Make Submitions";
+            this.btnMakeSubmitions.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Controls.Add(this.btnManageUsers);
+            this.panel4.Location = new System.Drawing.Point(3, 64);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(228, 55);
+            this.panel4.TabIndex = 36;
+            // 
+            // btnManageUsers
+            // 
+            this.btnManageUsers.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnManageUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManageUsers.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnManageUsers.FlatAppearance.BorderSize = 0;
+            this.btnManageUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageUsers.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUsers.ForeColor = System.Drawing.Color.White;
+            this.btnManageUsers.Image = global::contlle.Properties.Resources.users;
+            this.btnManageUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageUsers.Location = new System.Drawing.Point(0, 0);
+            this.btnManageUsers.Name = "btnManageUsers";
+            this.btnManageUsers.Size = new System.Drawing.Size(228, 55);
+            this.btnManageUsers.TabIndex = 35;
+            this.btnManageUsers.Text = "Manage Users";
+            this.btnManageUsers.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.btnDashboard);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(231, 55);
+            this.panel2.TabIndex = 34;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = global::contlle.Properties.Resources.analytics;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(231, 55);
+            this.btnDashboard.TabIndex = 35;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
+            this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.panel10);
+            this.flowLayoutPanel1.Controls.Add(this.panel11);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(238, 572);
+            this.flowLayoutPanel1.TabIndex = 33;
             // 
             // lblAdminDashboard
             // 
@@ -155,178 +329,6 @@ namespace contlle
             this.panel5.Size = new System.Drawing.Size(537, 3);
             this.panel5.TabIndex = 29;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(231, 572);
-            this.flowLayoutPanel1.TabIndex = 33;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.btnDashboard);
-            this.panel2.Location = new System.Drawing.Point(255, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(228, 58);
-            this.panel2.TabIndex = 34;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Location = new System.Drawing.Point(529, 73);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(228, 58);
-            this.panel4.TabIndex = 36;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Silver;
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Location = new System.Drawing.Point(529, 157);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(228, 58);
-            this.panel7.TabIndex = 37;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Silver;
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Location = new System.Drawing.Point(529, 232);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(228, 58);
-            this.panel8.TabIndex = 38;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Silver;
-            this.panel9.Controls.Add(this.button4);
-            this.panel9.Location = new System.Drawing.Point(529, 314);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(228, 58);
-            this.panel9.TabIndex = 39;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Silver;
-            this.panel10.Controls.Add(this.button5);
-            this.panel10.Location = new System.Drawing.Point(529, 396);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(228, 58);
-            this.panel10.TabIndex = 40;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.SeaGreen;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::contlle.Properties.Resources.reports;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(228, 51);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "Manage Reports";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.SeaGreen;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::contlle.Properties.Resources.transaction;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(228, 51);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Track Transactions";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SeaGreen;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::contlle.Properties.Resources.procedure;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(228, 51);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Track Procedures";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SeaGreen;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::contlle.Properties.Resources.submitdocuments;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(228, 51);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Make Submissions";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SeaGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::contlle.Properties.Resources.users;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(228, 51);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Manage Users";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Image = global::contlle.Properties.Resources.analytics;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(228, 51);
-            this.btnDashboard.TabIndex = 35;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
@@ -340,29 +342,29 @@ namespace contlle
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
-            this.panel11.Controls.Add(this.button6);
-            this.panel11.Location = new System.Drawing.Point(281, 369);
+            this.panel11.Controls.Add(this.btnLogout);
+            this.panel11.Location = new System.Drawing.Point(3, 369);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(228, 58);
+            this.panel11.Size = new System.Drawing.Size(228, 55);
             this.panel11.TabIndex = 41;
             // 
-            // button6
+            // btnLogout
             // 
-            this.button6.BackColor = System.Drawing.Color.SeaGreen;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::contlle.Properties.Resources.sign_out1;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(228, 51);
-            this.button6.TabIndex = 35;
-            this.button6.Text = "Logout";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::contlle.Properties.Resources.sign_out;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(0, 0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(228, 55);
+            this.btnLogout.TabIndex = 35;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // AdminHome
             // 
@@ -380,14 +382,15 @@ namespace contlle
             this.Text = "AdminHome";
             this.Load += new System.EventHandler(this.AdminHome_Load);
             this.panel1.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -408,14 +411,16 @@ namespace contlle
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnTrackProcedures;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMakeSubmitions;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnManageUsers;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnManageReports;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnTrackTransactions;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
