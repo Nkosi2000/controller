@@ -30,160 +30,69 @@ namespace contlle
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblLogin = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lnkSignout = new System.Windows.Forms.LinkLabel();
-            this.lnkDocumentation = new System.Windows.Forms.LinkLabel();
-            this.lnkSupport = new System.Windows.Forms.LinkLabel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblAdminDashboard = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(210, 69);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(0, 68);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(723, 559);
+            this.panel1.Size = new System.Drawing.Size(933, 572);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // linkLabel1
+            // lblAdminDashboard
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(788, 97);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(59, 16);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(832, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // lblLogin
-            // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblLogin.Location = new System.Drawing.Point(390, 17);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(355, 33);
-            this.lblLogin.TabIndex = 22;
-            this.lblLogin.Text = "Administration Dashboard";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.lnkSignout);
-            this.panel2.Controls.Add(this.lnkDocumentation);
-            this.panel2.Controls.Add(this.lnkSupport);
-            this.panel2.Location = new System.Drawing.Point(0, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(210, 572);
-            this.panel2.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::contlle.Properties.Resources.home;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 460);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lnkSignout
-            // 
-            this.lnkSignout.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkSignout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkSignout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkSignout.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkSignout.LinkColor = System.Drawing.Color.White;
-            this.lnkSignout.Location = new System.Drawing.Point(40, 533);
-            this.lnkSignout.Name = "lnkSignout";
-            this.lnkSignout.Size = new System.Drawing.Size(141, 25);
-            this.lnkSignout.TabIndex = 31;
-            this.lnkSignout.TabStop = true;
-            this.lnkSignout.Text = "Sign Out";
-            this.lnkSignout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lnkDocumentation
-            // 
-            this.lnkDocumentation.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkDocumentation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkDocumentation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkDocumentation.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lnkDocumentation.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkDocumentation.LinkColor = System.Drawing.Color.White;
-            this.lnkDocumentation.Location = new System.Drawing.Point(40, 498);
-            this.lnkDocumentation.Name = "lnkDocumentation";
-            this.lnkDocumentation.Size = new System.Drawing.Size(141, 25);
-            this.lnkDocumentation.TabIndex = 30;
-            this.lnkDocumentation.TabStop = true;
-            this.lnkDocumentation.Text = "Visit Documentation";
-            this.lnkDocumentation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lnkSupport
-            // 
-            this.lnkSupport.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkSupport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkSupport.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkSupport.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkSupport.LinkColor = System.Drawing.Color.White;
-            this.lnkSupport.Location = new System.Drawing.Point(40, 460);
-            this.lnkSupport.Name = "lnkSupport";
-            this.lnkSupport.Size = new System.Drawing.Size(141, 26);
-            this.lnkSupport.TabIndex = 29;
-            this.lnkSupport.TabStop = true;
-            this.lnkSupport.Text = "Contact Support";
-            this.lnkSupport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.linkLabel2);
-            this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Location = new System.Drawing.Point(0, 574);
-            this.panel4.Name = "panel4";
-            this.panel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel4.Size = new System.Drawing.Size(210, 54);
-            this.panel4.TabIndex = 23;
+            this.lblAdminDashboard.AutoSize = true;
+            this.lblAdminDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdminDashboard.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdminDashboard.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblAdminDashboard.Location = new System.Drawing.Point(390, 17);
+            this.lblAdminDashboard.Name = "lblAdminDashboard";
+            this.lblAdminDashboard.Size = new System.Drawing.Size(355, 33);
+            this.lblAdminDashboard.TabIndex = 22;
+            this.lblAdminDashboard.Text = "Administration Dashboard";
             // 
             // label6
             // 
@@ -213,16 +122,6 @@ namespace contlle
             this.logotext.Text = "CHARGE";
             this.logotext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -230,67 +129,13 @@ namespace contlle
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.logotext);
-            this.panel3.Controls.Add(this.lblLogin);
+            this.panel3.Controls.Add(this.lblAdminDashboard);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel3.Size = new System.Drawing.Size(933, 69);
             this.panel3.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::contlle.Properties.Resources.documentation;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 498);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::contlle.Properties.Resources.sign_out;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 533);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::contlle.Properties.Resources.email;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 16);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel2.LinkColor = System.Drawing.Color.SeaGreen;
-            this.linkLabel2.Location = new System.Drawing.Point(40, 16);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(141, 25);
-            this.linkLabel2.TabIndex = 33;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "email";
-            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.panel5.Location = new System.Drawing.Point(0, 66);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(537, 3);
-            this.panel5.TabIndex = 29;
             // 
             // panel6
             // 
@@ -301,16 +146,232 @@ namespace contlle
             this.panel6.Size = new System.Drawing.Size(537, 3);
             this.panel6.TabIndex = 30;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel5.ForeColor = System.Drawing.Color.SeaGreen;
+            this.panel5.Location = new System.Drawing.Point(0, 66);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(537, 3);
+            this.panel5.TabIndex = 29;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(231, 572);
+            this.flowLayoutPanel1.TabIndex = 33;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.btnDashboard);
+            this.panel2.Location = new System.Drawing.Point(255, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(228, 58);
+            this.panel2.TabIndex = 34;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Location = new System.Drawing.Point(529, 73);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(228, 58);
+            this.panel4.TabIndex = 36;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Silver;
+            this.panel7.Controls.Add(this.button2);
+            this.panel7.Location = new System.Drawing.Point(529, 157);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(228, 58);
+            this.panel7.TabIndex = 37;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Silver;
+            this.panel8.Controls.Add(this.button3);
+            this.panel8.Location = new System.Drawing.Point(529, 232);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(228, 58);
+            this.panel8.TabIndex = 38;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Silver;
+            this.panel9.Controls.Add(this.button4);
+            this.panel9.Location = new System.Drawing.Point(529, 314);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(228, 58);
+            this.panel9.TabIndex = 39;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Silver;
+            this.panel10.Controls.Add(this.button5);
+            this.panel10.Location = new System.Drawing.Point(529, 396);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(228, 58);
+            this.panel10.TabIndex = 40;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SeaGreen;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::contlle.Properties.Resources.reports;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(0, 0);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(228, 51);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "Manage Reports";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.SeaGreen;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::contlle.Properties.Resources.transaction;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(228, 51);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "Track Transactions";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SeaGreen;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::contlle.Properties.Resources.procedure;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(228, 51);
+            this.button3.TabIndex = 35;
+            this.button3.Text = "Track Procedures";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SeaGreen;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::contlle.Properties.Resources.submitdocuments;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(228, 51);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "Make Submissions";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SeaGreen;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::contlle.Properties.Resources.users;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(228, 51);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Manage Users";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = global::contlle.Properties.Resources.analytics;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(228, 51);
+            this.btnDashboard.TabIndex = 35;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Silver;
+            this.panel11.Controls.Add(this.button6);
+            this.panel11.Location = new System.Drawing.Point(281, 369);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(228, 58);
+            this.panel11.TabIndex = 41;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.SeaGreen;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = global::contlle.Properties.Resources.sign_out1;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(0, 0);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(228, 51);
+            this.button6.TabIndex = 35;
+            this.button6.Text = "Logout";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(933, 628);
+            this.ClientSize = new System.Drawing.Size(933, 640);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -319,16 +380,16 @@ namespace contlle
             this.Text = "AdminHome";
             this.Load += new System.EventHandler(this.AdminHome_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -336,24 +397,25 @@ namespace contlle
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblAdminDashboard;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label logotext;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.LinkLabel lnkDocumentation;
-        private System.Windows.Forms.LinkLabel lnkSupport;
-        private System.Windows.Forms.LinkLabel lnkSignout;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button4;
     }
 }
