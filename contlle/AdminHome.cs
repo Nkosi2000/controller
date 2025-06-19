@@ -47,5 +47,33 @@ namespace contlle
         {
 
         }
+
+        bool sidebarExpand = true;
+
+        private void SliderTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand) 
+            {
+                sidebar.Width -= 10;
+                if (sidebar.Width <= 55) 
+                {
+                    sidebarExpand = false;
+                    SliderTransition.Stop();
+                }
+            }
+            else {
+                sidebar.Width += 10;
+                if (sidebar.Width >= 238)
+                {
+                    sidebarExpand = true;
+                    SliderTransition.Stop();
+                }
+            }
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            SliderTransition.Start();
+        }
     }
 }

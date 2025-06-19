@@ -29,6 +29,7 @@ namespace contlle
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnManageReports = new System.Windows.Forms.Button();
@@ -55,6 +56,7 @@ namespace contlle
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.SliderTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -74,10 +76,10 @@ namespace contlle
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.sidebar);
-            this.panel1.Location = new System.Drawing.Point(0, 104);
+            this.panel1.Location = new System.Drawing.Point(0, 108);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 536);
+            this.panel1.Size = new System.Drawing.Size(933, 532);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -87,7 +89,7 @@ namespace contlle
             this.panel10.Controls.Add(this.btnManageReports);
             this.panel10.Location = new System.Drawing.Point(3, 308);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(228, 55);
+            this.panel10.Size = new System.Drawing.Size(231, 55);
             this.panel10.TabIndex = 40;
             // 
             // btnManageReports
@@ -114,7 +116,7 @@ namespace contlle
             this.panel9.Controls.Add(this.btnTrackTransactions);
             this.panel9.Location = new System.Drawing.Point(3, 247);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(228, 55);
+            this.panel9.Size = new System.Drawing.Size(231, 55);
             this.panel9.TabIndex = 39;
             // 
             // btnTrackTransactions
@@ -141,7 +143,7 @@ namespace contlle
             this.panel8.Controls.Add(this.btnTrackProcedures);
             this.panel8.Location = new System.Drawing.Point(3, 186);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(228, 55);
+            this.panel8.Size = new System.Drawing.Size(231, 55);
             this.panel8.TabIndex = 38;
             // 
             // btnTrackProcedures
@@ -168,7 +170,7 @@ namespace contlle
             this.panel7.Controls.Add(this.btnMakeSubmitions);
             this.panel7.Location = new System.Drawing.Point(3, 125);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(228, 55);
+            this.panel7.Size = new System.Drawing.Size(231, 55);
             this.panel7.TabIndex = 37;
             // 
             // btnMakeSubmitions
@@ -195,7 +197,7 @@ namespace contlle
             this.panel4.Controls.Add(this.btnManageUsers);
             this.panel4.Location = new System.Drawing.Point(3, 64);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(228, 55);
+            this.panel4.Size = new System.Drawing.Size(231, 55);
             this.panel4.TabIndex = 36;
             // 
             // btnManageUsers
@@ -218,7 +220,7 @@ namespace contlle
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.BackColor = System.Drawing.Color.LimeGreen;
             this.panel2.Controls.Add(this.btnDashboard);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
@@ -239,7 +241,7 @@ namespace contlle
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 0);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(231, 55);
+            this.btnDashboard.Size = new System.Drawing.Size(228, 55);
             this.btnDashboard.TabIndex = 35;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -258,7 +260,7 @@ namespace contlle
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(238, 536);
+            this.sidebar.Size = new System.Drawing.Size(238, 532);
             this.sidebar.TabIndex = 33;
             // 
             // lblAdminDashboard
@@ -346,11 +348,11 @@ namespace contlle
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.Silver;
+            this.panel11.BackColor = System.Drawing.Color.DarkRed;
             this.panel11.Controls.Add(this.btnLogout);
             this.panel11.Location = new System.Drawing.Point(3, 369);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(228, 55);
+            this.panel11.Size = new System.Drawing.Size(231, 55);
             this.panel11.TabIndex = 41;
             // 
             // btnLogout
@@ -378,14 +380,14 @@ namespace contlle
             this.panel12.ForeColor = System.Drawing.Color.SeaGreen;
             this.panel12.Location = new System.Drawing.Point(0, 69);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(933, 35);
+            this.panel12.Size = new System.Drawing.Size(933, 39);
             this.panel12.TabIndex = 30;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Silver;
             this.panel13.Controls.Add(this.btnMenu);
-            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Location = new System.Drawing.Point(3, 1);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(47, 35);
             this.panel13.TabIndex = 42;
@@ -406,6 +408,12 @@ namespace contlle
             this.btnMenu.Size = new System.Drawing.Size(47, 35);
             this.btnMenu.TabIndex = 35;
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // SliderTransition
+            // 
+            this.SliderTransition.Interval = 10;
+            this.SliderTransition.Tick += new System.EventHandler(this.SliderTransition_Tick);
             // 
             // AdminHome
             // 
@@ -469,5 +477,6 @@ namespace contlle
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Timer SliderTransition;
     }
 }
