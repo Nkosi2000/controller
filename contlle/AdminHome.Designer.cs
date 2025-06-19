@@ -42,7 +42,7 @@ namespace contlle
             this.btnManageUsers = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.lblAdminDashboard = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
@@ -52,6 +52,9 @@ namespace contlle
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -59,20 +62,22 @@ namespace contlle
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.sidebar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.flowLayoutPanel1);
-            this.panel1.Location = new System.Drawing.Point(0, 68);
+            this.panel1.Controls.Add(this.sidebar);
+            this.panel1.Location = new System.Drawing.Point(0, 104);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 572);
+            this.panel1.Size = new System.Drawing.Size(933, 536);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -240,21 +245,21 @@ namespace contlle
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // flowLayoutPanel1
+            // sidebar
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(238, 572);
-            this.flowLayoutPanel1.TabIndex = 33;
+            this.sidebar.BackColor = System.Drawing.Color.SeaGreen;
+            this.sidebar.Controls.Add(this.panel2);
+            this.sidebar.Controls.Add(this.panel4);
+            this.sidebar.Controls.Add(this.panel7);
+            this.sidebar.Controls.Add(this.panel8);
+            this.sidebar.Controls.Add(this.panel9);
+            this.sidebar.Controls.Add(this.panel10);
+            this.sidebar.Controls.Add(this.panel11);
+            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sidebar.Location = new System.Drawing.Point(0, 0);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(238, 536);
+            this.sidebar.TabIndex = 33;
             // 
             // lblAdminDashboard
             // 
@@ -366,12 +371,49 @@ namespace contlle
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.ForeColor = System.Drawing.Color.SeaGreen;
+            this.panel12.Location = new System.Drawing.Point(0, 69);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(933, 35);
+            this.panel12.TabIndex = 30;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Silver;
+            this.panel13.Controls.Add(this.btnMenu);
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(47, 35);
+            this.panel13.TabIndex = 42;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Image = global::contlle.Properties.Resources.menu;
+            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.Location = new System.Drawing.Point(0, 0);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(47, 35);
+            this.btnMenu.TabIndex = 35;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(933, 640);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -388,11 +430,13 @@ namespace contlle
             this.panel7.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.sidebar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel11.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -407,7 +451,7 @@ namespace contlle
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel sidebar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panel8;
@@ -422,5 +466,8 @@ namespace contlle
         private System.Windows.Forms.Button btnTrackTransactions;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button btnMenu;
     }
 }
