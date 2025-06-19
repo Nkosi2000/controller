@@ -12,9 +12,30 @@ namespace contlle
 {
     public partial class AdminHome : Form
     {
+       
         public AdminHome()
         {
             InitializeComponent();
+            this.IsMdiContainer = true;
+        }
+
+        private void LoadScreen(Control screen)
+        {
+            // AdminDashboard
+            AdminDashboard.Controls.Clear();
+            screen.Dock = DockStyle.Fill;
+            AdminDashboard.Controls.Add(screen);
+
+            // AdminManageUsers
+
+            // AdminMakeSubmitions
+
+            // AdminTrackPocedures
+
+            // AdminTrackTransactions
+
+            // AdminManageReports
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -45,7 +66,7 @@ namespace contlle
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            LoadScreen(new AdminDashboardControl1());
         }
 
         bool sidebarExpand = true;

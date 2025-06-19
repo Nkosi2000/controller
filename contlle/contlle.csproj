@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardControl1.Designer.cs">
+      <DependentUpon>AdminDashboardControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminDashboardControl1.resx">
+      <DependentUpon>AdminDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,5 +205,6 @@
     <None Include="Resources\3d-abstract-flowing-twisted-strands.jpg" />
     <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
