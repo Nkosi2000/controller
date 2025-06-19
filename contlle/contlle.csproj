@@ -176,6 +176,11 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\email.png" />
+    <None Include="Resources\sign out.png" />
+    <None Include="Resources\documentation.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\home icon.png" />
     <None Include="Resources\3418133.jpg" />
     <None Include="Resources\49215.jpg" />
     <None Include="Resources\e6a0c3b4-7081-49c9-aff8-b1d3f4544fed.jpg" />

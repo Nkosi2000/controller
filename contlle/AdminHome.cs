@@ -22,5 +22,15 @@ namespace contlle
             Text = "1";
             Text = "2";
         }
+
+        private void AdminHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
