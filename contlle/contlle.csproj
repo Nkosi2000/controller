@@ -50,11 +50,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminDashboardControl1.cs">
+    <Compile Include="admin controls\AdminDashboardControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AdminDashboardControl1.Designer.cs">
+    <Compile Include="admin controls\AdminDashboardControl1.Designer.cs">
       <DependentUpon>AdminDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminMakeSubmitionsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminMakeSubmitionsControl1.Designer.cs">
+      <DependentUpon>AdminMakeSubmitionsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminManageReportsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminManageReportsControl1.Designer.cs">
+      <DependentUpon>AdminManageReportsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminManageUsersControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminManageUsersControl1.Designer.cs">
+      <DependentUpon>AdminManageUsersControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackProceduresControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackProceduresControl1.Designer.cs">
+      <DependentUpon>AdminTrackProceduresControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackTransactionsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackTransactionsControl1.Designer.cs">
+      <DependentUpon>AdminTrackTransactionsControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminHome.cs">
       <SubType>Form</SubType>
@@ -117,8 +147,23 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminDashboardControl1.resx">
+    <EmbeddedResource Include="admin controls\AdminDashboardControl1.resx">
       <DependentUpon>AdminDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminMakeSubmitionsControl1.resx">
+      <DependentUpon>AdminMakeSubmitionsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminManageReportsControl1.resx">
+      <DependentUpon>AdminManageReportsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminManageUsersControl1.resx">
+      <DependentUpon>AdminManageUsersControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminTrackProceduresControl1.resx">
+      <DependentUpon>AdminTrackProceduresControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminTrackTransactionsControl1.resx">
+      <DependentUpon>AdminTrackTransactionsControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
@@ -205,6 +250,8 @@
     <None Include="Resources\3d-abstract-flowing-twisted-strands.jpg" />
     <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="admin winforms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

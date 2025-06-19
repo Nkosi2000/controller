@@ -31,6 +31,7 @@ namespace contlle
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlDashboard = new System.Windows.Forms.Panel();
             this.pnlManageUsers = new System.Windows.Forms.Panel();
@@ -48,7 +49,6 @@ namespace contlle
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.SliderTransition = new System.Windows.Forms.Timer(this.components);
-            this.AdminDashboard = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnManageUsers = new System.Windows.Forms.Button();
@@ -76,7 +76,7 @@ namespace contlle
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.AdminDashboard);
+            this.panel1.Controls.Add(this.mainPanel);
             this.panel1.Controls.Add(this.sidebar);
             this.panel1.Location = new System.Drawing.Point(0, 108);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -84,6 +84,16 @@ namespace contlle
             this.panel1.Size = new System.Drawing.Size(933, 532);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.BackColor = System.Drawing.Color.White;
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.mainPanel.Location = new System.Drawing.Point(238, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(695, 532);
+            this.mainPanel.TabIndex = 34;
             // 
             // sidebar
             // 
@@ -263,16 +273,6 @@ namespace contlle
             this.SliderTransition.Interval = 10;
             this.SliderTransition.Tick += new System.EventHandler(this.SliderTransition_Tick);
             // 
-            // AdminDashboard
-            // 
-            this.AdminDashboard.BackColor = System.Drawing.Color.White;
-            this.AdminDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdminDashboard.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AdminDashboard.Location = new System.Drawing.Point(238, 0);
-            this.AdminDashboard.Name = "AdminDashboard";
-            this.AdminDashboard.Size = new System.Drawing.Size(695, 532);
-            this.AdminDashboard.TabIndex = 34;
-            // 
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.SeaGreen;
@@ -327,6 +327,7 @@ namespace contlle
             this.btnManageUsers.TabIndex = 35;
             this.btnManageUsers.Text = "Manage Users";
             this.btnManageUsers.UseVisualStyleBackColor = false;
+            this.btnManageUsers.Click += new System.EventHandler(this.btnManageUsers_Click);
             // 
             // btnMakeSubmitions
             // 
@@ -345,6 +346,7 @@ namespace contlle
             this.btnMakeSubmitions.TabIndex = 35;
             this.btnMakeSubmitions.Text = "Make Submitions";
             this.btnMakeSubmitions.UseVisualStyleBackColor = false;
+            this.btnMakeSubmitions.Click += new System.EventHandler(this.btnMakeSubmitions_Click);
             // 
             // btnTrackProcedures
             // 
@@ -363,6 +365,7 @@ namespace contlle
             this.btnTrackProcedures.TabIndex = 35;
             this.btnTrackProcedures.Text = "Track Procedures";
             this.btnTrackProcedures.UseVisualStyleBackColor = false;
+            this.btnTrackProcedures.Click += new System.EventHandler(this.btnTrackProcedures_Click);
             // 
             // btnTrackTransactions
             // 
@@ -381,6 +384,7 @@ namespace contlle
             this.btnTrackTransactions.TabIndex = 35;
             this.btnTrackTransactions.Text = "Track Transactions";
             this.btnTrackTransactions.UseVisualStyleBackColor = false;
+            this.btnTrackTransactions.Click += new System.EventHandler(this.btnTrackTransactions_Click);
             // 
             // btnManageReports
             // 
@@ -399,6 +403,7 @@ namespace contlle
             this.btnManageReports.TabIndex = 35;
             this.btnManageReports.Text = "Manage Reports";
             this.btnManageReports.UseVisualStyleBackColor = false;
+            this.btnManageReports.Click += new System.EventHandler(this.btnManageReports_Click);
             // 
             // btnLogout
             // 
@@ -491,6 +496,6 @@ namespace contlle
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Timer SliderTransition;
-        private System.Windows.Forms.Panel AdminDashboard;
+        private System.Windows.Forms.Panel mainPanel;
     }
 }

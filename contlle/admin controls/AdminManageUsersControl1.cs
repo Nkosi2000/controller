@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace contlle.ADMIN
+namespace contlle.admin_controls
 {
-    public partial class AdminDashboard : Form
+    public partial class AdminManageUsersControl1 : UserControl
     {
-        public AdminDashboard()
+        public AdminManageUsersControl1()
         {
             InitializeComponent();
         }
