@@ -16,7 +16,7 @@ namespace contlle
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminHome());
+            Application.Run(new Login());
         }
     }
 }

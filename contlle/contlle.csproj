@@ -141,6 +141,12 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="staff portal\StaffPortalControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staff portal\StaffPortalControl1.Designer.cs">
+      <DependentUpon>StaffPortalControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="staff portal\StaffPortalControl1.resx">
+      <DependentUpon>StaffPortalControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +239,13 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\backarrow.png" />
+    <None Include="Resources\492151.jpg" />
+    <None Include="Resources\staff3.png" />
+    <None Include="Resources\staff2.png" />
+    <None Include="Resources\staff.png" />
+    <None Include="Resources\staffportal.png" />
+    <None Include="Resources\roles.png" />
     <None Include="Resources\sign out1.png" />
     <None Include="Resources\reports.png" />
     <None Include="Resources\transaction.png" />

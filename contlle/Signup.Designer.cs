@@ -39,7 +39,6 @@ namespace contlle
             this.lblAlreadyHaveAnAccount = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.lnkX = new System.Windows.Forms.LinkLabel();
             this.lblConfirmPassword = new System.Windows.Forms.Label();
@@ -53,6 +52,11 @@ namespace contlle
             this.lblEmailAddress = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.txtAlternativeNumber = new System.Windows.Forms.TextBox();
+            this.lblAlternativeNumber = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +66,10 @@ namespace contlle
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.lblAlternativeNumber);
+            this.panel1.Controls.Add(this.txtAlternativeNumber);
+            this.panel1.Controls.Add(this.lblLastName);
+            this.panel1.Controls.Add(this.txtLastName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblwarning);
             this.panel1.Controls.Add(this.lnkTsCs);
@@ -200,21 +208,11 @@ namespace contlle
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label8.Location = new System.Drawing.Point(455, 34);
+            this.label8.Location = new System.Drawing.Point(455, 22);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 33);
             this.label8.TabIndex = 15;
             this.label8.Text = "Signup";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
-            this.pictureBox1.Location = new System.Drawing.Point(91, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // txtConfirmPassword
             // 
@@ -233,7 +231,7 @@ namespace contlle
             this.lnkX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkX.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkX.LinkColor = System.Drawing.Color.SeaGreen;
-            this.lnkX.Location = new System.Drawing.Point(657, 22);
+            this.lnkX.Location = new System.Drawing.Point(676, 22);
             this.lnkX.Name = "lnkX";
             this.lnkX.Size = new System.Drawing.Size(24, 25);
             this.lnkX.TabIndex = 0;
@@ -244,9 +242,10 @@ namespace contlle
             // lblConfirmPassword
             // 
             this.lblConfirmPassword.AutoSize = true;
-            this.lblConfirmPassword.Location = new System.Drawing.Point(339, 286);
+            this.lblConfirmPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmPassword.Location = new System.Drawing.Point(336, 286);
             this.lblConfirmPassword.Name = "lblConfirmPassword";
-            this.lblConfirmPassword.Size = new System.Drawing.Size(94, 13);
+            this.lblConfirmPassword.Size = new System.Drawing.Size(105, 16);
             this.lblConfirmPassword.TabIndex = 13;
             this.lblConfirmPassword.Text = "Confirm Password:";
             // 
@@ -276,7 +275,7 @@ namespace contlle
             this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNumber.Location = new System.Drawing.Point(339, 154);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(342, 21);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(163, 21);
             this.txtPhoneNumber.TabIndex = 10;
             // 
             // txtFullName
@@ -286,7 +285,7 @@ namespace contlle
             this.txtFullName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtFullName.Location = new System.Drawing.Point(339, 105);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(342, 21);
+            this.txtFullName.Size = new System.Drawing.Size(163, 21);
             this.txtFullName.TabIndex = 9;
             this.txtFullName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -311,11 +310,12 @@ namespace contlle
             // 
             this.lnkLogin.ActiveLinkColor = System.Drawing.Color.LightGreen;
             this.lnkLogin.AutoSize = true;
+            this.lnkLogin.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkLogin.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lnkLogin.LinkColor = System.Drawing.Color.SeaGreen;
             this.lnkLogin.Location = new System.Drawing.Point(496, 438);
             this.lnkLogin.Name = "lnkLogin";
-            this.lnkLogin.Size = new System.Drawing.Size(36, 13);
+            this.lnkLogin.Size = new System.Drawing.Size(38, 16);
             this.lnkLogin.TabIndex = 7;
             this.lnkLogin.TabStop = true;
             this.lnkLogin.Text = "Login.";
@@ -324,38 +324,91 @@ namespace contlle
             // lblCreatePassword
             // 
             this.lblCreatePassword.AutoSize = true;
-            this.lblCreatePassword.Location = new System.Drawing.Point(339, 237);
+            this.lblCreatePassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatePassword.Location = new System.Drawing.Point(336, 237);
             this.lblCreatePassword.Name = "lblCreatePassword";
-            this.lblCreatePassword.Size = new System.Drawing.Size(90, 13);
+            this.lblCreatePassword.Size = new System.Drawing.Size(102, 16);
             this.lblCreatePassword.TabIndex = 5;
             this.lblCreatePassword.Text = "Create Password:";
             // 
             // lblEmailAddress
             // 
             this.lblEmailAddress.AutoSize = true;
-            this.lblEmailAddress.Location = new System.Drawing.Point(339, 189);
+            this.lblEmailAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailAddress.Location = new System.Drawing.Point(336, 189);
             this.lblEmailAddress.Name = "lblEmailAddress";
-            this.lblEmailAddress.Size = new System.Drawing.Size(69, 13);
+            this.lblEmailAddress.Size = new System.Drawing.Size(75, 16);
             this.lblEmailAddress.TabIndex = 4;
             this.lblEmailAddress.Text = "Email adress:";
             // 
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(339, 138);
+            this.lblPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhoneNumber.Location = new System.Drawing.Point(336, 138);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(79, 13);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(90, 16);
             this.lblPhoneNumber.TabIndex = 3;
             this.lblPhoneNumber.Text = "Phone number:";
             // 
             // lblFullName
             // 
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Location = new System.Drawing.Point(339, 89);
+            this.lblFullName.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(336, 89);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(55, 13);
+            this.lblFullName.Size = new System.Drawing.Size(61, 16);
             this.lblFullName.TabIndex = 2;
             this.lblFullName.Text = "Full name:";
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLastName.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtLastName.Location = new System.Drawing.Point(518, 105);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(163, 21);
+            this.txtLastName.TabIndex = 22;
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.Location = new System.Drawing.Point(515, 88);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(66, 16);
+            this.lblLastName.TabIndex = 23;
+            this.lblLastName.Text = "Last name:";
+            // 
+            // txtAlternativeNumber
+            // 
+            this.txtAlternativeNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAlternativeNumber.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlternativeNumber.Location = new System.Drawing.Point(518, 154);
+            this.txtAlternativeNumber.Name = "txtAlternativeNumber";
+            this.txtAlternativeNumber.Size = new System.Drawing.Size(163, 21);
+            this.txtAlternativeNumber.TabIndex = 24;
+            // 
+            // lblAlternativeNumber
+            // 
+            this.lblAlternativeNumber.AutoSize = true;
+            this.lblAlternativeNumber.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlternativeNumber.Location = new System.Drawing.Point(516, 138);
+            this.lblAlternativeNumber.Name = "lblAlternativeNumber";
+            this.lblAlternativeNumber.Size = new System.Drawing.Size(173, 16);
+            this.lblAlternativeNumber.TabIndex = 25;
+            this.lblAlternativeNumber.Text = "Alternative number: (Optional)";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
+            this.pictureBox1.Location = new System.Drawing.Point(91, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -415,5 +468,9 @@ namespace contlle
         private System.Windows.Forms.LinkLabel lnkTsCs;
         private System.Windows.Forms.Label lblwarning;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.Label lblLastName;
+        private System.Windows.Forms.Label lblAlternativeNumber;
+        private System.Windows.Forms.TextBox txtAlternativeNumber;
     }
 }

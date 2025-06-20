@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using contlle.staff_portal;
+using contlle;
 
 namespace contlle
 {
@@ -74,6 +76,40 @@ namespace contlle
         {
             this.Hide();
             new Home().Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            btnDashboard.Visible = false;
+            lblStaffPortal.Visible = false;
+            LoadStaffPortScreen(new StaffPortalControl1());
+        }
+
+        private void LoadStaffPortScreen(Control screen)
+        {
+            panel4.Controls.Clear();
+            screen.Dock = DockStyle.Fill;
+            panel4.Controls.Add(screen);
+
+            if (screen is StaffPortalControl1 staffPortal)
+            {
+                staffPortal.BackLinkClicked += StaffPortal_BackLinkClicked;
+            }
+        }
+
+        private void StaffPortal_BackLinkClicked(object sender, EventArgs e)
+        {
+       
+            panel4.Visible = false;
+            //pnlStaffPortal.Visible = true;
+           //pnlFORSTAFF.Controls.Clear();
+        }
+
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
