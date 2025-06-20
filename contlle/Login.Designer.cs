@@ -60,7 +60,6 @@ namespace contlle
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pnlFORSTAFF);
             this.panel1.Controls.Add(this.lblStaffPortal);
             this.panel1.Controls.Add(this.btnDashboard);
@@ -70,6 +69,7 @@ namespace contlle
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(711, 476);
@@ -249,7 +249,7 @@ namespace contlle
             this.lblLogin.BackColor = System.Drawing.Color.Transparent;
             this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblLogin.Location = new System.Drawing.Point(141, 36);
+            this.lblLogin.Location = new System.Drawing.Point(122, 36);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(85, 33);
             this.lblLogin.TabIndex = 21;

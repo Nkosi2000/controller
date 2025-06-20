@@ -102,8 +102,11 @@ namespace contlle
         {
        
             panel4.Visible = false;
+            btnDashboard.Visible = true;
+            lblStaffPortal.Visible = true;
+
             //pnlStaffPortal.Visible = true;
-           //pnlFORSTAFF.Controls.Clear();
+            //pnlFORSTAFF.Controls.Clear();
         }
 
 
