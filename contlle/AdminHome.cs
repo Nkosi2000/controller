@@ -154,5 +154,10 @@ namespace contlle
         {
             SliderTransition.Start();
         }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

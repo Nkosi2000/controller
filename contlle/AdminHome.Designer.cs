@@ -111,6 +111,7 @@ namespace contlle
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(238, 532);
             this.sidebar.TabIndex = 33;
+            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
             // 
             // pnlDashboard
             // 

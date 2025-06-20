@@ -98,6 +98,18 @@
     <Compile Include="AdminRqstSolar.Designer.cs">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </Compile>
+    <Compile Include="client controls\ClientManageSubscriptionsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientManageSubscriptionsControl1.Designer.cs">
+      <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientHome.Designer.cs">
+      <DependentUpon>ClientHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +159,18 @@
     <Compile Include="staff portal\StaffPortalControl1.Designer.cs">
       <DependentUpon>StaffPortalControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="SupervisorHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupervisorHome.Designer.cs">
+      <DependentUpon>SupervisorHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianHome.Designer.cs">
+      <DependentUpon>TechnicianHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminRqstSolar.resx">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientManageSubscriptionsControl1.resx">
+      <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -239,6 +266,7 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\subscription.png" />
     <None Include="Resources\backarrow.png" />
     <None Include="Resources\492151.jpg" />
     <None Include="Resources\staff3.png" />
@@ -267,7 +295,8 @@
     <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="admin winforms\" />
+    <Folder Include="supervisor controls\" />
+    <Folder Include="technician controls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
