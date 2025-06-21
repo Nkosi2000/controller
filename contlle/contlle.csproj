@@ -98,6 +98,12 @@
     <Compile Include="AdminRqstSolar.Designer.cs">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </Compile>
+    <Compile Include="client controls\ClientDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientDashboardControl1.Designer.cs">
+      <DependentUpon>ClientDashboardControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="client controls\ClientManageSubscriptionsControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,6 +189,48 @@
     <Compile Include="staff portal\StaffPortalControl1.Designer.cs">
       <DependentUpon>StaffPortalControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="supervisor controls\SpvStockReportsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SpvStockReportsControl1.Designer.cs">
+      <DependentUpon>SpvStockReportsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SpvTransactionsReportControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SpvTransactionsReportControl1.Designer.cs">
+      <DependentUpon>SpvTransactionsReportControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorAssignScheduleControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorAssignScheduleControl1.Designer.cs">
+      <DependentUpon>SupervisorAssignScheduleControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorDashboardControl1.Designer.cs">
+      <DependentUpon>SupervisorDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorManageUsersControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorManageUsersControl1.Designer.cs">
+      <DependentUpon>SupervisorManageUsersControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorScheduleEvaluationControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorScheduleEvaluationControl1.Designer.cs">
+      <DependentUpon>SupervisorScheduleEvaluationControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorStaffReportsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorStaffReportsControl1.Designer.cs">
+      <DependentUpon>SupervisorStaffReportsControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="SupervisorHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminRqstSolar.resx">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientDashboardControl1.resx">
+      <DependentUpon>ClientDashboardControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="client controls\ClientManageSubscriptionsControl1.resx">
       <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
@@ -274,6 +325,30 @@
     <EmbeddedResource Include="staff portal\StaffPortalControl1.resx">
       <DependentUpon>StaffPortalControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SpvStockReportsControl1.resx">
+      <DependentUpon>SpvStockReportsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SpvTransactionsReportControl1.resx">
+      <DependentUpon>SpvTransactionsReportControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorAssignScheduleControl1.resx">
+      <DependentUpon>SupervisorAssignScheduleControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorDashboardControl1.resx">
+      <DependentUpon>SupervisorDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorManageUsersControl1.resx">
+      <DependentUpon>SupervisorManageUsersControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorScheduleEvaluationControl1.resx">
+      <DependentUpon>SupervisorScheduleEvaluationControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorStaffReportsControl1.resx">
+      <DependentUpon>SupervisorStaffReportsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorHome.resx">
+      <DependentUpon>SupervisorHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,6 +380,10 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\stock.png" />
+    <None Include="Resources\staffreport.png" />
+    <None Include="Resources\evaluation.png" />
+    <None Include="Resources\assign.png" />
     <None Include="Resources\paymenthistory.png" />
     <None Include="Resources\paymentmethod.png" />
     <None Include="Resources\electricity.png" />
@@ -338,7 +417,6 @@
     <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="supervisor controls\" />
     <Folder Include="technician controls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

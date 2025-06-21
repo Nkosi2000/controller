@@ -35,27 +35,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
             this.lblClientDashboard = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.pnlManageUsers = new System.Windows.Forms.Panel();
-            this.pnlMakeSubmitions = new System.Windows.Forms.Panel();
-            this.pnlTrackProcedures = new System.Windows.Forms.Panel();
-            this.pnlTrackTransactions = new System.Windows.Forms.Panel();
-            this.pnlLogout = new System.Windows.Forms.Panel();
-            this.SliderTransition = new System.Windows.Forms.Timer(this.components);
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.pnlManageUsers = new System.Windows.Forms.Panel();
             this.btnShop = new System.Windows.Forms.Button();
+            this.pnlMakeSubmitions = new System.Windows.Forms.Panel();
             this.btnTrackElectricity = new System.Windows.Forms.Button();
+            this.pnlTrackProcedures = new System.Windows.Forms.Panel();
             this.btnPaymentMethod = new System.Windows.Forms.Button();
+            this.pnlTrackTransactions = new System.Windows.Forms.Panel();
             this.btnPaymentHistory = new System.Windows.Forms.Button();
+            this.pnlLogout = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SliderTransition = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnMainDash = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -66,7 +69,7 @@
             this.pnlTrackProcedures.SuspendLayout();
             this.pnlTrackTransactions.SuspendLayout();
             this.pnlLogout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -143,6 +146,16 @@
             this.lblClientDashboard.TabIndex = 22;
             this.lblClientDashboard.Text = "Client Dashboard";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.SeaGreen;
@@ -161,6 +174,24 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(42, 35);
             this.panel13.TabIndex = 42;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Image = global::contlle.Properties.Resources.menu;
+            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.Location = new System.Drawing.Point(0, 0);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(42, 35);
+            this.btnMenu.TabIndex = 35;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panel1
             // 
@@ -186,6 +217,7 @@
             // sidebar
             // 
             this.sidebar.BackColor = System.Drawing.Color.SeaGreen;
+            this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Controls.Add(this.pnlDashboard);
             this.sidebar.Controls.Add(this.pnlManageUsers);
             this.sidebar.Controls.Add(this.pnlMakeSubmitions);
@@ -203,60 +235,10 @@
             // 
             this.pnlDashboard.BackColor = System.Drawing.Color.Silver;
             this.pnlDashboard.Controls.Add(this.btnDashboard);
-            this.pnlDashboard.Location = new System.Drawing.Point(3, 3);
+            this.pnlDashboard.Location = new System.Drawing.Point(3, 64);
             this.pnlDashboard.Name = "pnlDashboard";
             this.pnlDashboard.Size = new System.Drawing.Size(231, 55);
             this.pnlDashboard.TabIndex = 34;
-            // 
-            // pnlManageUsers
-            // 
-            this.pnlManageUsers.BackColor = System.Drawing.Color.LimeGreen;
-            this.pnlManageUsers.Controls.Add(this.btnShop);
-            this.pnlManageUsers.Location = new System.Drawing.Point(3, 64);
-            this.pnlManageUsers.Name = "pnlManageUsers";
-            this.pnlManageUsers.Size = new System.Drawing.Size(231, 55);
-            this.pnlManageUsers.TabIndex = 36;
-            // 
-            // pnlMakeSubmitions
-            // 
-            this.pnlMakeSubmitions.BackColor = System.Drawing.Color.Gold;
-            this.pnlMakeSubmitions.Controls.Add(this.btnTrackElectricity);
-            this.pnlMakeSubmitions.Location = new System.Drawing.Point(3, 125);
-            this.pnlMakeSubmitions.Name = "pnlMakeSubmitions";
-            this.pnlMakeSubmitions.Size = new System.Drawing.Size(231, 55);
-            this.pnlMakeSubmitions.TabIndex = 37;
-            // 
-            // pnlTrackProcedures
-            // 
-            this.pnlTrackProcedures.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.pnlTrackProcedures.Controls.Add(this.btnPaymentMethod);
-            this.pnlTrackProcedures.Location = new System.Drawing.Point(3, 186);
-            this.pnlTrackProcedures.Name = "pnlTrackProcedures";
-            this.pnlTrackProcedures.Size = new System.Drawing.Size(231, 55);
-            this.pnlTrackProcedures.TabIndex = 38;
-            // 
-            // pnlTrackTransactions
-            // 
-            this.pnlTrackTransactions.BackColor = System.Drawing.Color.Silver;
-            this.pnlTrackTransactions.Controls.Add(this.btnPaymentHistory);
-            this.pnlTrackTransactions.Location = new System.Drawing.Point(3, 247);
-            this.pnlTrackTransactions.Name = "pnlTrackTransactions";
-            this.pnlTrackTransactions.Size = new System.Drawing.Size(231, 55);
-            this.pnlTrackTransactions.TabIndex = 39;
-            // 
-            // pnlLogout
-            // 
-            this.pnlLogout.BackColor = System.Drawing.Color.DarkRed;
-            this.pnlLogout.Controls.Add(this.btnLogout);
-            this.pnlLogout.Location = new System.Drawing.Point(3, 308);
-            this.pnlLogout.Name = "pnlLogout";
-            this.pnlLogout.Size = new System.Drawing.Size(231, 55);
-            this.pnlLogout.TabIndex = 41;
-            // 
-            // SliderTransition
-            // 
-            this.SliderTransition.Interval = 10;
-            this.SliderTransition.Tick += new System.EventHandler(this.SliderTransition_Tick);
             // 
             // btnDashboard
             // 
@@ -277,6 +259,15 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // pnlManageUsers
+            // 
+            this.pnlManageUsers.BackColor = System.Drawing.Color.LimeGreen;
+            this.pnlManageUsers.Controls.Add(this.btnShop);
+            this.pnlManageUsers.Location = new System.Drawing.Point(3, 125);
+            this.pnlManageUsers.Name = "pnlManageUsers";
+            this.pnlManageUsers.Size = new System.Drawing.Size(231, 55);
+            this.pnlManageUsers.TabIndex = 36;
+            // 
             // btnShop
             // 
             this.btnShop.BackColor = System.Drawing.Color.SeaGreen;
@@ -295,6 +286,15 @@
             this.btnShop.Text = "Shop";
             this.btnShop.UseVisualStyleBackColor = false;
             this.btnShop.Click += new System.EventHandler(this.btnShop_Click);
+            // 
+            // pnlMakeSubmitions
+            // 
+            this.pnlMakeSubmitions.BackColor = System.Drawing.Color.Gold;
+            this.pnlMakeSubmitions.Controls.Add(this.btnTrackElectricity);
+            this.pnlMakeSubmitions.Location = new System.Drawing.Point(3, 186);
+            this.pnlMakeSubmitions.Name = "pnlMakeSubmitions";
+            this.pnlMakeSubmitions.Size = new System.Drawing.Size(231, 55);
+            this.pnlMakeSubmitions.TabIndex = 37;
             // 
             // btnTrackElectricity
             // 
@@ -315,6 +315,15 @@
             this.btnTrackElectricity.UseVisualStyleBackColor = false;
             this.btnTrackElectricity.Click += new System.EventHandler(this.btnTrackElectricity_Click);
             // 
+            // pnlTrackProcedures
+            // 
+            this.pnlTrackProcedures.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pnlTrackProcedures.Controls.Add(this.btnPaymentMethod);
+            this.pnlTrackProcedures.Location = new System.Drawing.Point(3, 247);
+            this.pnlTrackProcedures.Name = "pnlTrackProcedures";
+            this.pnlTrackProcedures.Size = new System.Drawing.Size(231, 55);
+            this.pnlTrackProcedures.TabIndex = 38;
+            // 
             // btnPaymentMethod
             // 
             this.btnPaymentMethod.BackColor = System.Drawing.Color.SeaGreen;
@@ -333,6 +342,15 @@
             this.btnPaymentMethod.Text = "Payment Method";
             this.btnPaymentMethod.UseVisualStyleBackColor = false;
             this.btnPaymentMethod.Click += new System.EventHandler(this.btnPaymentMethod_Click);
+            // 
+            // pnlTrackTransactions
+            // 
+            this.pnlTrackTransactions.BackColor = System.Drawing.Color.Silver;
+            this.pnlTrackTransactions.Controls.Add(this.btnPaymentHistory);
+            this.pnlTrackTransactions.Location = new System.Drawing.Point(3, 308);
+            this.pnlTrackTransactions.Name = "pnlTrackTransactions";
+            this.pnlTrackTransactions.Size = new System.Drawing.Size(231, 55);
+            this.pnlTrackTransactions.TabIndex = 39;
             // 
             // btnPaymentHistory
             // 
@@ -353,6 +371,15 @@
             this.btnPaymentHistory.UseVisualStyleBackColor = false;
             this.btnPaymentHistory.Click += new System.EventHandler(this.btnPaymentHistory_Click);
             // 
+            // pnlLogout
+            // 
+            this.pnlLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.pnlLogout.Controls.Add(this.btnLogout);
+            this.pnlLogout.Location = new System.Drawing.Point(3, 369);
+            this.pnlLogout.Name = "pnlLogout";
+            this.pnlLogout.Size = new System.Drawing.Size(231, 55);
+            this.pnlLogout.TabIndex = 41;
+            // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.SeaGreen;
@@ -372,33 +399,38 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnMenu
+            // SliderTransition
             // 
-            this.btnMenu.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Image = global::contlle.Properties.Resources.menu;
-            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(42, 35);
-            this.btnMenu.TabIndex = 35;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.SliderTransition.Interval = 10;
+            this.SliderTransition.Tick += new System.EventHandler(this.SliderTransition_Tick);
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.btnMainDash);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(231, 55);
+            this.panel2.TabIndex = 36;
+            // 
+            // btnMainDash
+            // 
+            this.btnMainDash.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnMainDash.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMainDash.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnMainDash.FlatAppearance.BorderSize = 0;
+            this.btnMainDash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainDash.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMainDash.ForeColor = System.Drawing.Color.White;
+            this.btnMainDash.Image = global::contlle.Properties.Resources.analytics;
+            this.btnMainDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMainDash.Location = new System.Drawing.Point(0, 0);
+            this.btnMainDash.Name = "btnMainDash";
+            this.btnMainDash.Size = new System.Drawing.Size(228, 55);
+            this.btnMainDash.TabIndex = 35;
+            this.btnMainDash.Text = "Dashboard";
+            this.btnMainDash.UseVisualStyleBackColor = false;
+            this.btnMainDash.Click += new System.EventHandler(this.btnMainDash_Click);
             // 
             // ClientHome
             // 
@@ -414,6 +446,7 @@
             this.Text = "ClientHome";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -424,7 +457,7 @@
             this.pnlTrackProcedures.ResumeLayout(false);
             this.pnlTrackTransactions.ResumeLayout(false);
             this.pnlLogout.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -457,5 +490,7 @@
         private System.Windows.Forms.Panel pnlLogout;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Timer SliderTransition;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnMainDash;
     }
 }

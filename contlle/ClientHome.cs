@@ -20,6 +20,19 @@ namespace contlle
         }
 
         // -------------------------------------------------------------------------------------
+        // Dashboard
+        private void btnMainDash_Click(object sender, EventArgs e)
+        {
+            LoadDashboard(new ClientDashboardControl1());
+        }
+
+        private void LoadDashboard(Control screen)
+        {
+            mainPanel.Controls.Clear();
+            screen.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(screen);
+        }
+
         // Manage Subscriptions
         private void btnDashboard_Click(object sender, EventArgs e)
         {
