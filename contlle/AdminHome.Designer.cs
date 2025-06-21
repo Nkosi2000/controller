@@ -258,7 +258,7 @@ namespace contlle
             this.panel12.Location = new System.Drawing.Point(0, 69);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(933, 39);
-            this.panel12.TabIndex = 30;
+            this.panel12.TabIndex = 3;
             // 
             // panel13
             // 
@@ -417,12 +417,13 @@ namespace contlle
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::contlle.Properties.Resources.sign_out;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 0);
+            this.btnLogout.Location = new System.Drawing.Point(3, 0);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(228, 55);
             this.btnLogout.TabIndex = 35;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pictureBox1
             // 

@@ -104,6 +104,30 @@
     <Compile Include="client controls\ClientManageSubscriptionsControl1.Designer.cs">
       <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="client controls\ClientPaymentHistoryControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentHistoryControl1.Designer.cs">
+      <DependentUpon>ClientPaymentHistoryControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentMethodControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentMethodControl1.Designer.cs">
+      <DependentUpon>ClientPaymentMethodControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientShopControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientShopControl1.Designer.cs">
+      <DependentUpon>ClientShopControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientTrackElectrictyControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientTrackElectrictyControl1.Designer.cs">
+      <DependentUpon>ClientTrackElectrictyControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +228,21 @@
     <EmbeddedResource Include="client controls\ClientManageSubscriptionsControl1.resx">
       <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientPaymentHistoryControl1.resx">
+      <DependentUpon>ClientPaymentHistoryControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientPaymentMethodControl1.resx">
+      <DependentUpon>ClientPaymentMethodControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientShopControl1.resx">
+      <DependentUpon>ClientShopControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientTrackElectrictyControl1.resx">
+      <DependentUpon>ClientTrackElectrictyControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientHome.resx">
+      <DependentUpon>ClientHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +305,10 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\paymenthistory.png" />
+    <None Include="Resources\paymentmethod.png" />
+    <None Include="Resources\electricity.png" />
+    <None Include="Resources\shop.png" />
     <None Include="Resources\subscription.png" />
     <None Include="Resources\backarrow.png" />
     <None Include="Resources\492151.jpg" />

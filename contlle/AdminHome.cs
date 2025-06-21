@@ -125,6 +125,14 @@ namespace contlle
             screen.Dock = DockStyle.Fill;
             mainPanel.Controls.Add(screen);
         }
+
+        // -------------------------------------------------------------------------------------
+        // Logout
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
         // -------------------------------------------------------------------------------------
 
         bool sidebarExpand = true;
