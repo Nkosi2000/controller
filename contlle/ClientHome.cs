@@ -98,6 +98,19 @@ namespace contlle
             mainPanel.Controls.Add(screen);
         }
 
+        // Client Profile
+        private void btnMyProfile_Click(object sender, EventArgs e)
+        {
+            LoadMyProfile(new ClientMyProfileControl1());
+        }
+
+        private void LoadMyProfile(Control screen)
+        {
+            mainPanel.Controls.Clear();
+            screen.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(screen);
+        }
+
         // -------------------------------------------------------------------------------------
         // Logout
         private void btnLogout_Click(object sender, EventArgs e)

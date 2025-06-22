@@ -35,41 +35,44 @@
             this.label6 = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
             this.lblClientDashboard = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pnlManageUsers = new System.Windows.Forms.Panel();
-            this.btnShop = new System.Windows.Forms.Button();
-            this.pnlMakeSubmitions = new System.Windows.Forms.Panel();
-            this.btnTrackElectricity = new System.Windows.Forms.Button();
-            this.pnlTrackProcedures = new System.Windows.Forms.Panel();
-            this.btnPaymentMethod = new System.Windows.Forms.Button();
-            this.pnlTrackTransactions = new System.Windows.Forms.Panel();
-            this.btnPaymentHistory = new System.Windows.Forms.Button();
-            this.pnlLogout = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.SliderTransition = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.pnlManageUsers = new System.Windows.Forms.Panel();
+            this.pnlMakeSubmitions = new System.Windows.Forms.Panel();
+            this.pnlTrackProcedures = new System.Windows.Forms.Panel();
+            this.pnlTrackTransactions = new System.Windows.Forms.Panel();
+            this.pnlLogout = new System.Windows.Forms.Panel();
+            this.SliderTransition = new System.Windows.Forms.Timer(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnMainDash = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.btnShop = new System.Windows.Forms.Button();
+            this.btnTrackElectricity = new System.Windows.Forms.Button();
+            this.btnPaymentMethod = new System.Windows.Forms.Button();
+            this.btnPaymentHistory = new System.Windows.Forms.Button();
+            this.btnMyProfile = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
             this.sidebar.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.pnlDashboard.SuspendLayout();
             this.pnlManageUsers.SuspendLayout();
             this.pnlMakeSubmitions.SuspendLayout();
             this.pnlTrackProcedures.SuspendLayout();
             this.pnlTrackTransactions.SuspendLayout();
             this.pnlLogout.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -146,16 +149,6 @@
             this.lblClientDashboard.TabIndex = 22;
             this.lblClientDashboard.Text = "Client Dashboard";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.SeaGreen;
@@ -174,24 +167,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(42, 35);
             this.panel13.TabIndex = 42;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Image = global::contlle.Properties.Resources.menu;
-            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(42, 35);
-            this.btnMenu.TabIndex = 35;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panel1
             // 
@@ -223,6 +198,7 @@
             this.sidebar.Controls.Add(this.pnlMakeSubmitions);
             this.sidebar.Controls.Add(this.pnlTrackProcedures);
             this.sidebar.Controls.Add(this.pnlTrackTransactions);
+            this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Controls.Add(this.pnlLogout);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -230,6 +206,15 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(238, 532);
             this.sidebar.TabIndex = 33;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.btnMainDash);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(231, 55);
+            this.panel2.TabIndex = 36;
             // 
             // pnlDashboard
             // 
@@ -240,25 +225,6 @@
             this.pnlDashboard.Size = new System.Drawing.Size(231, 55);
             this.pnlDashboard.TabIndex = 34;
             // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Image = global::contlle.Properties.Resources.subscription;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(228, 55);
-            this.btnDashboard.TabIndex = 35;
-            this.btnDashboard.Text = "Manage Subscriptions";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
             // pnlManageUsers
             // 
             this.pnlManageUsers.BackColor = System.Drawing.Color.LimeGreen;
@@ -267,25 +233,6 @@
             this.pnlManageUsers.Name = "pnlManageUsers";
             this.pnlManageUsers.Size = new System.Drawing.Size(231, 55);
             this.pnlManageUsers.TabIndex = 36;
-            // 
-            // btnShop
-            // 
-            this.btnShop.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnShop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShop.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnShop.FlatAppearance.BorderSize = 0;
-            this.btnShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShop.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShop.ForeColor = System.Drawing.Color.White;
-            this.btnShop.Image = global::contlle.Properties.Resources.shop;
-            this.btnShop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShop.Location = new System.Drawing.Point(0, 0);
-            this.btnShop.Name = "btnShop";
-            this.btnShop.Size = new System.Drawing.Size(228, 55);
-            this.btnShop.TabIndex = 35;
-            this.btnShop.Text = "Shop";
-            this.btnShop.UseVisualStyleBackColor = false;
-            this.btnShop.Click += new System.EventHandler(this.btnShop_Click);
             // 
             // pnlMakeSubmitions
             // 
@@ -296,25 +243,6 @@
             this.pnlMakeSubmitions.Size = new System.Drawing.Size(231, 55);
             this.pnlMakeSubmitions.TabIndex = 37;
             // 
-            // btnTrackElectricity
-            // 
-            this.btnTrackElectricity.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnTrackElectricity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTrackElectricity.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnTrackElectricity.FlatAppearance.BorderSize = 0;
-            this.btnTrackElectricity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrackElectricity.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrackElectricity.ForeColor = System.Drawing.Color.White;
-            this.btnTrackElectricity.Image = global::contlle.Properties.Resources.electricity;
-            this.btnTrackElectricity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrackElectricity.Location = new System.Drawing.Point(0, 0);
-            this.btnTrackElectricity.Name = "btnTrackElectricity";
-            this.btnTrackElectricity.Size = new System.Drawing.Size(228, 55);
-            this.btnTrackElectricity.TabIndex = 35;
-            this.btnTrackElectricity.Text = "Track electricity";
-            this.btnTrackElectricity.UseVisualStyleBackColor = false;
-            this.btnTrackElectricity.Click += new System.EventHandler(this.btnTrackElectricity_Click);
-            // 
             // pnlTrackProcedures
             // 
             this.pnlTrackProcedures.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -323,25 +251,6 @@
             this.pnlTrackProcedures.Name = "pnlTrackProcedures";
             this.pnlTrackProcedures.Size = new System.Drawing.Size(231, 55);
             this.pnlTrackProcedures.TabIndex = 38;
-            // 
-            // btnPaymentMethod
-            // 
-            this.btnPaymentMethod.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnPaymentMethod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPaymentMethod.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnPaymentMethod.FlatAppearance.BorderSize = 0;
-            this.btnPaymentMethod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentMethod.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaymentMethod.ForeColor = System.Drawing.Color.White;
-            this.btnPaymentMethod.Image = global::contlle.Properties.Resources.paymentmethod;
-            this.btnPaymentMethod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPaymentMethod.Location = new System.Drawing.Point(0, 0);
-            this.btnPaymentMethod.Name = "btnPaymentMethod";
-            this.btnPaymentMethod.Size = new System.Drawing.Size(228, 55);
-            this.btnPaymentMethod.TabIndex = 35;
-            this.btnPaymentMethod.Text = "Payment Method";
-            this.btnPaymentMethod.UseVisualStyleBackColor = false;
-            this.btnPaymentMethod.Click += new System.EventHandler(this.btnPaymentMethod_Click);
             // 
             // pnlTrackTransactions
             // 
@@ -352,66 +261,28 @@
             this.pnlTrackTransactions.Size = new System.Drawing.Size(231, 55);
             this.pnlTrackTransactions.TabIndex = 39;
             // 
-            // btnPaymentHistory
-            // 
-            this.btnPaymentHistory.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnPaymentHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPaymentHistory.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnPaymentHistory.FlatAppearance.BorderSize = 0;
-            this.btnPaymentHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentHistory.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaymentHistory.ForeColor = System.Drawing.Color.White;
-            this.btnPaymentHistory.Image = global::contlle.Properties.Resources.paymenthistory;
-            this.btnPaymentHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPaymentHistory.Location = new System.Drawing.Point(0, 0);
-            this.btnPaymentHistory.Name = "btnPaymentHistory";
-            this.btnPaymentHistory.Size = new System.Drawing.Size(228, 55);
-            this.btnPaymentHistory.TabIndex = 35;
-            this.btnPaymentHistory.Text = "Payment History";
-            this.btnPaymentHistory.UseVisualStyleBackColor = false;
-            this.btnPaymentHistory.Click += new System.EventHandler(this.btnPaymentHistory_Click);
-            // 
             // pnlLogout
             // 
             this.pnlLogout.BackColor = System.Drawing.Color.DarkRed;
             this.pnlLogout.Controls.Add(this.btnLogout);
-            this.pnlLogout.Location = new System.Drawing.Point(3, 369);
+            this.pnlLogout.Location = new System.Drawing.Point(3, 430);
             this.pnlLogout.Name = "pnlLogout";
             this.pnlLogout.Size = new System.Drawing.Size(231, 55);
             this.pnlLogout.TabIndex = 41;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = global::contlle.Properties.Resources.sign_out;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(3, 0);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(228, 55);
-            this.btnLogout.TabIndex = 35;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // SliderTransition
             // 
             this.SliderTransition.Interval = 10;
             this.SliderTransition.Tick += new System.EventHandler(this.SliderTransition_Tick);
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.btnMainDash);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(231, 55);
-            this.panel2.TabIndex = 36;
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Controls.Add(this.btnMyProfile);
+            this.panel4.Location = new System.Drawing.Point(3, 369);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(231, 55);
+            this.panel4.TabIndex = 40;
             // 
             // btnMainDash
             // 
@@ -432,6 +303,167 @@
             this.btnMainDash.UseVisualStyleBackColor = false;
             this.btnMainDash.Click += new System.EventHandler(this.btnMainDash_Click);
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = global::contlle.Properties.Resources.subscription;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(228, 55);
+            this.btnDashboard.TabIndex = 35;
+            this.btnDashboard.Text = "Manage Subscriptions";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // btnShop
+            // 
+            this.btnShop.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnShop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShop.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnShop.FlatAppearance.BorderSize = 0;
+            this.btnShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShop.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShop.ForeColor = System.Drawing.Color.White;
+            this.btnShop.Image = global::contlle.Properties.Resources.shop;
+            this.btnShop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShop.Location = new System.Drawing.Point(0, 0);
+            this.btnShop.Name = "btnShop";
+            this.btnShop.Size = new System.Drawing.Size(228, 55);
+            this.btnShop.TabIndex = 35;
+            this.btnShop.Text = "Shop";
+            this.btnShop.UseVisualStyleBackColor = false;
+            this.btnShop.Click += new System.EventHandler(this.btnShop_Click);
+            // 
+            // btnTrackElectricity
+            // 
+            this.btnTrackElectricity.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnTrackElectricity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrackElectricity.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnTrackElectricity.FlatAppearance.BorderSize = 0;
+            this.btnTrackElectricity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrackElectricity.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrackElectricity.ForeColor = System.Drawing.Color.White;
+            this.btnTrackElectricity.Image = global::contlle.Properties.Resources.electricity;
+            this.btnTrackElectricity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrackElectricity.Location = new System.Drawing.Point(0, 0);
+            this.btnTrackElectricity.Name = "btnTrackElectricity";
+            this.btnTrackElectricity.Size = new System.Drawing.Size(228, 55);
+            this.btnTrackElectricity.TabIndex = 35;
+            this.btnTrackElectricity.Text = "Track electricity";
+            this.btnTrackElectricity.UseVisualStyleBackColor = false;
+            this.btnTrackElectricity.Click += new System.EventHandler(this.btnTrackElectricity_Click);
+            // 
+            // btnPaymentMethod
+            // 
+            this.btnPaymentMethod.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnPaymentMethod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPaymentMethod.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnPaymentMethod.FlatAppearance.BorderSize = 0;
+            this.btnPaymentMethod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentMethod.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaymentMethod.ForeColor = System.Drawing.Color.White;
+            this.btnPaymentMethod.Image = global::contlle.Properties.Resources.paymentmethod;
+            this.btnPaymentMethod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPaymentMethod.Location = new System.Drawing.Point(0, 0);
+            this.btnPaymentMethod.Name = "btnPaymentMethod";
+            this.btnPaymentMethod.Size = new System.Drawing.Size(228, 55);
+            this.btnPaymentMethod.TabIndex = 35;
+            this.btnPaymentMethod.Text = "Payment Method";
+            this.btnPaymentMethod.UseVisualStyleBackColor = false;
+            this.btnPaymentMethod.Click += new System.EventHandler(this.btnPaymentMethod_Click);
+            // 
+            // btnPaymentHistory
+            // 
+            this.btnPaymentHistory.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnPaymentHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPaymentHistory.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnPaymentHistory.FlatAppearance.BorderSize = 0;
+            this.btnPaymentHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentHistory.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaymentHistory.ForeColor = System.Drawing.Color.White;
+            this.btnPaymentHistory.Image = global::contlle.Properties.Resources.paymenthistory;
+            this.btnPaymentHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPaymentHistory.Location = new System.Drawing.Point(0, 0);
+            this.btnPaymentHistory.Name = "btnPaymentHistory";
+            this.btnPaymentHistory.Size = new System.Drawing.Size(228, 55);
+            this.btnPaymentHistory.TabIndex = 35;
+            this.btnPaymentHistory.Text = "Payment History";
+            this.btnPaymentHistory.UseVisualStyleBackColor = false;
+            this.btnPaymentHistory.Click += new System.EventHandler(this.btnPaymentHistory_Click);
+            // 
+            // btnMyProfile
+            // 
+            this.btnMyProfile.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnMyProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMyProfile.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnMyProfile.FlatAppearance.BorderSize = 0;
+            this.btnMyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMyProfile.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMyProfile.ForeColor = System.Drawing.Color.White;
+            this.btnMyProfile.Image = global::contlle.Properties.Resources.profile;
+            this.btnMyProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMyProfile.Location = new System.Drawing.Point(0, 0);
+            this.btnMyProfile.Name = "btnMyProfile";
+            this.btnMyProfile.Size = new System.Drawing.Size(228, 55);
+            this.btnMyProfile.TabIndex = 35;
+            this.btnMyProfile.Text = "My Profile";
+            this.btnMyProfile.UseVisualStyleBackColor = false;
+            this.btnMyProfile.Click += new System.EventHandler(this.btnMyProfile_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::contlle.Properties.Resources.sign_out;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(3, 0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(228, 55);
+            this.btnLogout.TabIndex = 35;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Image = global::contlle.Properties.Resources.menu;
+            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.Location = new System.Drawing.Point(0, 0);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(42, 35);
+            this.btnMenu.TabIndex = 35;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // ClientHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,18 +478,19 @@
             this.Text = "ClientHome";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.sidebar.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.pnlDashboard.ResumeLayout(false);
             this.pnlManageUsers.ResumeLayout(false);
             this.pnlMakeSubmitions.ResumeLayout(false);
             this.pnlTrackProcedures.ResumeLayout(false);
             this.pnlTrackTransactions.ResumeLayout(false);
             this.pnlLogout.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -492,5 +525,7 @@
         private System.Windows.Forms.Timer SliderTransition;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnMainDash;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnMyProfile;
     }
 }

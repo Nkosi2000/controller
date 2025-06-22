@@ -41,16 +41,14 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.pnlManageUsers = new System.Windows.Forms.Panel();
             this.pnlMakeSubmitions = new System.Windows.Forms.Panel();
             this.pnlTrackProcedures = new System.Windows.Forms.Panel();
             this.pnlTrackTransactions = new System.Windows.Forms.Panel();
             this.pnlManageReports = new System.Windows.Forms.Panel();
-            this.pnlLogout = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlLogout = new System.Windows.Forms.Panel();
             this.SliderTransition = new System.Windows.Forms.Timer(this.components);
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnManageUsers = new System.Windows.Forms.Button();
             this.btnAssignSchedule = new System.Windows.Forms.Button();
             this.btnScheduleEvaluation = new System.Windows.Forms.Button();
             this.btnStaffReports = new System.Windows.Forms.Button();
@@ -59,20 +57,22 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnManageUsers = new System.Windows.Forms.Button();
+            this.pnlManageUsers = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
             this.sidebar.SuspendLayout();
             this.pnlDashboard.SuspendLayout();
-            this.pnlManageUsers.SuspendLayout();
             this.pnlMakeSubmitions.SuspendLayout();
             this.pnlTrackProcedures.SuspendLayout();
             this.pnlTrackTransactions.SuspendLayout();
             this.pnlManageReports.SuspendLayout();
-            this.pnlLogout.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pnlLogout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlManageUsers.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -215,15 +215,6 @@
             this.pnlDashboard.Size = new System.Drawing.Size(231, 55);
             this.pnlDashboard.TabIndex = 34;
             // 
-            // pnlManageUsers
-            // 
-            this.pnlManageUsers.BackColor = System.Drawing.Color.Silver;
-            this.pnlManageUsers.Controls.Add(this.btnManageUsers);
-            this.pnlManageUsers.Location = new System.Drawing.Point(3, 64);
-            this.pnlManageUsers.Name = "pnlManageUsers";
-            this.pnlManageUsers.Size = new System.Drawing.Size(231, 55);
-            this.pnlManageUsers.TabIndex = 36;
-            // 
             // pnlMakeSubmitions
             // 
             this.pnlMakeSubmitions.BackColor = System.Drawing.Color.LimeGreen;
@@ -260,15 +251,6 @@
             this.pnlManageReports.Size = new System.Drawing.Size(231, 55);
             this.pnlManageReports.TabIndex = 40;
             // 
-            // pnlLogout
-            // 
-            this.pnlLogout.BackColor = System.Drawing.Color.DarkRed;
-            this.pnlLogout.Controls.Add(this.btnLogout);
-            this.pnlLogout.Location = new System.Drawing.Point(3, 430);
-            this.pnlLogout.Name = "pnlLogout";
-            this.pnlLogout.Size = new System.Drawing.Size(231, 55);
-            this.pnlLogout.TabIndex = 41;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
@@ -277,6 +259,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(231, 55);
             this.panel2.TabIndex = 41;
+            // 
+            // pnlLogout
+            // 
+            this.pnlLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.pnlLogout.Controls.Add(this.btnLogout);
+            this.pnlLogout.Location = new System.Drawing.Point(3, 430);
+            this.pnlLogout.Name = "pnlLogout";
+            this.pnlLogout.Size = new System.Drawing.Size(231, 55);
+            this.pnlLogout.TabIndex = 41;
             // 
             // SliderTransition
             // 
@@ -301,25 +292,6 @@
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // btnManageUsers
-            // 
-            this.btnManageUsers.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnManageUsers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnManageUsers.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnManageUsers.FlatAppearance.BorderSize = 0;
-            this.btnManageUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManageUsers.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageUsers.ForeColor = System.Drawing.Color.White;
-            this.btnManageUsers.Image = global::contlle.Properties.Resources.users;
-            this.btnManageUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageUsers.Location = new System.Drawing.Point(0, 0);
-            this.btnManageUsers.Name = "btnManageUsers";
-            this.btnManageUsers.Size = new System.Drawing.Size(228, 55);
-            this.btnManageUsers.TabIndex = 35;
-            this.btnManageUsers.Text = "Manage Users";
-            this.btnManageUsers.UseVisualStyleBackColor = false;
-            this.btnManageUsers.Click += new System.EventHandler(this.btnManageUsers_Click);
             // 
             // btnAssignSchedule
             // 
@@ -463,6 +435,34 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // btnManageUsers
+            // 
+            this.btnManageUsers.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnManageUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManageUsers.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnManageUsers.FlatAppearance.BorderSize = 0;
+            this.btnManageUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageUsers.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUsers.ForeColor = System.Drawing.Color.White;
+            this.btnManageUsers.Image = global::contlle.Properties.Resources.users;
+            this.btnManageUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageUsers.Location = new System.Drawing.Point(0, 0);
+            this.btnManageUsers.Name = "btnManageUsers";
+            this.btnManageUsers.Size = new System.Drawing.Size(228, 55);
+            this.btnManageUsers.TabIndex = 35;
+            this.btnManageUsers.Text = "Manage Users";
+            this.btnManageUsers.UseVisualStyleBackColor = false;
+            this.btnManageUsers.Click += new System.EventHandler(this.btnManageUsers_Click);
+            // 
+            // pnlManageUsers
+            // 
+            this.pnlManageUsers.BackColor = System.Drawing.Color.Silver;
+            this.pnlManageUsers.Controls.Add(this.btnManageUsers);
+            this.pnlManageUsers.Location = new System.Drawing.Point(3, 64);
+            this.pnlManageUsers.Name = "pnlManageUsers";
+            this.pnlManageUsers.Size = new System.Drawing.Size(231, 55);
+            this.pnlManageUsers.TabIndex = 36;
+            // 
             // SupervisorHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,14 +482,14 @@
             this.panel1.ResumeLayout(false);
             this.sidebar.ResumeLayout(false);
             this.pnlDashboard.ResumeLayout(false);
-            this.pnlManageUsers.ResumeLayout(false);
             this.pnlMakeSubmitions.ResumeLayout(false);
             this.pnlTrackProcedures.ResumeLayout(false);
             this.pnlTrackTransactions.ResumeLayout(false);
             this.pnlManageReports.ResumeLayout(false);
-            this.pnlLogout.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.pnlLogout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlManageUsers.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -511,8 +511,6 @@
         private System.Windows.Forms.FlowLayoutPanel sidebar;
         private System.Windows.Forms.Panel pnlDashboard;
         private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Panel pnlManageUsers;
-        private System.Windows.Forms.Button btnManageUsers;
         private System.Windows.Forms.Panel pnlMakeSubmitions;
         private System.Windows.Forms.Button btnAssignSchedule;
         private System.Windows.Forms.Panel pnlTrackProcedures;
@@ -526,5 +524,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnStockReport;
         private System.Windows.Forms.Timer SliderTransition;
+        private System.Windows.Forms.Panel pnlManageUsers;
+        private System.Windows.Forms.Button btnManageUsers;
     }
 }

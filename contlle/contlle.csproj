@@ -110,6 +110,12 @@
     <Compile Include="client controls\ClientManageSubscriptionsControl1.Designer.cs">
       <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="client controls\ClientMyProfileControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientMyProfileControl1.Designer.cs">
+      <DependentUpon>ClientMyProfileControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="client controls\ClientPaymentHistoryControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -237,6 +243,30 @@
     <Compile Include="SupervisorHome.Designer.cs">
       <DependentUpon>SupervisorHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="technician controls\TechDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechDashboardControl1.Designer.cs">
+      <DependentUpon>TechDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechDeploymentControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechDeploymentControl1.Designer.cs">
+      <DependentUpon>TechDeploymentControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechFeedbackControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechFeedbackControl1.Designer.cs">
+      <DependentUpon>TechFeedbackControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechRatingsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechRatingsControl1.Designer.cs">
+      <DependentUpon>TechRatingsControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="TechnicianHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="client controls\ClientManageSubscriptionsControl1.resx">
       <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientMyProfileControl1.resx">
+      <DependentUpon>ClientMyProfileControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="client controls\ClientPaymentHistoryControl1.resx">
       <DependentUpon>ClientPaymentHistoryControl1.cs</DependentUpon>
@@ -349,6 +382,21 @@
     <EmbeddedResource Include="SupervisorHome.resx">
       <DependentUpon>SupervisorHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechDashboardControl1.resx">
+      <DependentUpon>TechDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechDeploymentControl1.resx">
+      <DependentUpon>TechDeploymentControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechFeedbackControl1.resx">
+      <DependentUpon>TechFeedbackControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechRatingsControl1.resx">
+      <DependentUpon>TechRatingsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianHome.resx">
+      <DependentUpon>TechnicianHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,6 +428,11 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\feedback2.png" />
+    <None Include="Resources\ratings.png" />
+    <None Include="Resources\feedback.png" />
+    <None Include="Resources\taskwork.png" />
     <None Include="Resources\stock.png" />
     <None Include="Resources\staffreport.png" />
     <None Include="Resources\evaluation.png" />
@@ -416,8 +469,6 @@
     <None Include="Resources\3d-abstract-flowing-twisted-strands.jpg" />
     <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="technician controls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
