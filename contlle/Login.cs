@@ -44,7 +44,7 @@ namespace contlle
                             //MessageBox.Show("Login successful.");
                             // Proceed to the main application form
                             this.Hide();
-                            new UserHome().Show();
+                            new ClientHome().Show();
                         }
                         else
                         {

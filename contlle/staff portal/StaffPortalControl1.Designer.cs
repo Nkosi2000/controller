@@ -32,12 +32,12 @@
             this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
             this.lnkForgotEmailAddress = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.lnkX = new System.Windows.Forms.LinkLabel();
             this.lblStaffLogin = new System.Windows.Forms.Label();
             this.lblStaffNumber = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtEmailAddress = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lnkX = new System.Windows.Forms.LinkLabel();
+            this.txtStaffEmailAddress = new System.Windows.Forms.TextBox();
+            this.txtStaffNumber = new System.Windows.Forms.TextBox();
+            this.lblstaffemail = new System.Windows.Forms.Label();
             this.pnlStaffPortal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,9 +50,9 @@
             this.pnlStaffPortal.Controls.Add(this.lnkX);
             this.pnlStaffPortal.Controls.Add(this.lblStaffLogin);
             this.pnlStaffPortal.Controls.Add(this.lblStaffNumber);
-            this.pnlStaffPortal.Controls.Add(this.txtPassword);
-            this.pnlStaffPortal.Controls.Add(this.txtEmailAddress);
-            this.pnlStaffPortal.Controls.Add(this.lblPassword);
+            this.pnlStaffPortal.Controls.Add(this.txtStaffEmailAddress);
+            this.pnlStaffPortal.Controls.Add(this.txtStaffNumber);
+            this.pnlStaffPortal.Controls.Add(this.lblstaffemail);
             this.pnlStaffPortal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlStaffPortal.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlStaffPortal.Location = new System.Drawing.Point(0, 0);
@@ -106,6 +106,25 @@
             this.btnLogin.TabIndex = 34;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // lnkX
+            // 
+            this.lnkX.ActiveLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkX.AutoSize = true;
+            this.lnkX.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lnkX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkX.Image = global::contlle.Properties.Resources.backarrow;
+            this.lnkX.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lnkX.LinkColor = System.Drawing.Color.SeaGreen;
+            this.lnkX.Location = new System.Drawing.Point(318, 3);
+            this.lnkX.Name = "lnkX";
+            this.lnkX.Size = new System.Drawing.Size(30, 25);
+            this.lnkX.TabIndex = 38;
+            this.lnkX.TabStop = true;
+            this.lnkX.Text = "   ";
+            this.lnkX.VisitedLinkColor = System.Drawing.Color.LightGreen;
+            this.lnkX.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkX_LinkClicked);
             // 
             // lblStaffLogin
             // 
@@ -129,52 +148,36 @@
             this.lblStaffNumber.TabIndex = 30;
             this.lblStaffNumber.Text = "Staff number:";
             // 
-            // txtPassword
+            // txtStaffEmailAddress
             // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(0, 231);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(342, 21);
-            this.txtPassword.TabIndex = 33;
-            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtStaffEmailAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStaffEmailAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffEmailAddress.Location = new System.Drawing.Point(0, 231);
+            this.txtStaffEmailAddress.Name = "txtStaffEmailAddress";
+            this.txtStaffEmailAddress.Size = new System.Drawing.Size(342, 21);
+            this.txtStaffEmailAddress.TabIndex = 33;
+            this.txtStaffEmailAddress.UseSystemPasswordChar = true;
+            this.txtStaffEmailAddress.TextChanged += new System.EventHandler(this.txtStaffEmailAddress_TextChanged);
             // 
-            // txtEmailAddress
+            // txtStaffNumber
             // 
-            this.txtEmailAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmailAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailAddress.Location = new System.Drawing.Point(0, 132);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(342, 21);
-            this.txtEmailAddress.TabIndex = 32;
+            this.txtStaffNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStaffNumber.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffNumber.Location = new System.Drawing.Point(0, 132);
+            this.txtStaffNumber.Name = "txtStaffNumber";
+            this.txtStaffNumber.Size = new System.Drawing.Size(342, 21);
+            this.txtStaffNumber.TabIndex = 32;
+            this.txtStaffNumber.TextChanged += new System.EventHandler(this.txtStaffNumber_TextChanged);
             // 
-            // lblPassword
+            // lblstaffemail
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(-3, 212);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(123, 16);
-            this.lblPassword.TabIndex = 31;
-            this.lblPassword.Text = "Last 7 digits of your ID:";
-            // 
-            // lnkX
-            // 
-            this.lnkX.ActiveLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkX.AutoSize = true;
-            this.lnkX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkX.Image = global::contlle.Properties.Resources.backarrow;
-            this.lnkX.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkX.LinkColor = System.Drawing.Color.SeaGreen;
-            this.lnkX.Location = new System.Drawing.Point(318, 3);
-            this.lnkX.Name = "lnkX";
-            this.lnkX.Size = new System.Drawing.Size(30, 25);
-            this.lnkX.TabIndex = 38;
-            this.lnkX.TabStop = true;
-            this.lnkX.Text = "   ";
-            this.lnkX.VisitedLinkColor = System.Drawing.Color.LightGreen;
-            this.lnkX.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkX_LinkClicked);
+            this.lblstaffemail.AutoSize = true;
+            this.lblstaffemail.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstaffemail.Location = new System.Drawing.Point(-3, 212);
+            this.lblstaffemail.Name = "lblstaffemail";
+            this.lblstaffemail.Size = new System.Drawing.Size(111, 16);
+            this.lblstaffemail.TabIndex = 31;
+            this.lblstaffemail.Text = "Staff email address:";
             // 
             // StaffPortalControl1
             // 
@@ -198,8 +201,8 @@
         private System.Windows.Forms.LinkLabel lnkX;
         private System.Windows.Forms.Label lblStaffLogin;
         private System.Windows.Forms.Label lblStaffNumber;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtEmailAddress;
-        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtStaffEmailAddress;
+        private System.Windows.Forms.TextBox txtStaffNumber;
+        private System.Windows.Forms.Label lblstaffemail;
     }
 }
