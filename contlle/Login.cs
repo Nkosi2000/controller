@@ -7,8 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Security.Cryptography;
-using System.Data.OleDb;
+
+using System.Data.SqlClient;
+using System.Configuration;
+using contlle.staff_portal;
+using contlle;
+
 
 namespace contlle
 {
@@ -23,96 +27,17 @@ namespace contlle
         {
             using (SHA256 sha256 = SHA256.Create())
             {
-                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder builder = new StringBuilder();
-                foreach (byte b in bytes)
-                {
-                    builder.Append(b.ToString("x2"));
-                }
-                return builder.ToString();
-            }
-        }
 
-       c
-            ///-----------------------------------------------------------------///
-            ///
-           
-            /*string hashedPassword = HashPassword(textBox2.Text.Trim());
+                string connectionString = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
+                string query = "SELECT COUNT(*) FROM [Users] WHERE [EmailAddress] = @EmailAddress AND [Password] = @Password";
+
+                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@EmailAddress", txtEmailAddress.Text.Trim());
+                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
 
           
-            string query = "SELECT Roles FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
-            using (OleDbConnection con = new OleDbConnection(connectionString))
-            using (OleDbCommand cmd = new OleDbCommand(query, con))
-            {
-                cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
-                cmd.Parameters.AddWithValue("?", HashPassword(textBox2.Text.Trim()));
-                cmd.Parameters.AddWithValue("?", "Admin");
-
-                try
-                {
-                    con.Open();
-                    var result = cmd.ExecuteScalar();
-                   
-                    if (result != DBNull.Value && result != null)
-                    {
-                        string role = result.ToString();
-                        MessageBox.Show("Login successful.");
-                        this.Hide();
-                        if (role == "Admin")
-                            new AdminHome().Show();
-                        else if (role =="")
-                            new UserHome().Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid username or password.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"An error occurred: {ex.Message}");
-                }
-            }*/
-
-            ///---------------------------------------------------------///
-            ///
-           /* string query = "SELECT Rolez FROM [Userz] WHERE [Emailz] = ? AND [Passwordz] = ?";
-            using (OleDbConnection con = new OleDbConnection(connectionString))
-            using (OleDbCommand cmd = new OleDbCommand(query, con))
-            {
-                cmd.Parameters.AddWithValue("?", textBox1.Text.Trim());
-                cmd.Parameters.AddWithValue("?", HashPassword(textBox2.Text.Trim()));
-               // cmd.Parameters.AddWithValue("?", "Admin");
-
-                try
-                {
-                    con.Open();
-                    using (OleDbDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            string role = reader["Rolez"].ToString();
-                            MessageBox.Show("Login successful.");
-                            this.Hide();
-                            if (role == "Admin")
-                                new AdminHome().Show();
-                            else
-                                new UserHome().Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid username or password.");
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"An error occurred: {ex.Message}");
-                }
-            }*/
-
-
-
 
         }
 
@@ -126,6 +51,49 @@ namespace contlle
         {
             this.Hide();
             new Home().Show();
+        }
+
+        private void lnkX_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Home().Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            btnDashboard.Visible = false;
+            lblStaffPortal.Visible = false;
+            LoadStaffPortScreen(new StaffPortalControl1());
+        }
+
+        private void LoadStaffPortScreen(Control screen)
+        {
+            panel4.Controls.Clear();
+            screen.Dock = DockStyle.Fill;
+            panel4.Controls.Add(screen);
+
+            if (screen is StaffPortalControl1 staffPortal)
+            {
+                staffPortal.BackLinkClicked += StaffPortal_BackLinkClicked;
+            }
+        }
+
+        private void StaffPortal_BackLinkClicked(object sender, EventArgs e)
+        {
+       
+            panel4.Visible = false;
+            btnDashboard.Visible = true;
+            lblStaffPortal.Visible = true;
+
+            //pnlStaffPortal.Visible = true;
+            //pnlFORSTAFF.Controls.Clear();
+        }
+
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

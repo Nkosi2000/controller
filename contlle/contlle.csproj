@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F7159981-EEA5-4532-A541-A2EEF6F1D8DD}</ProjectGuid>
+    <ProjectGuid>{160C4ABC-5E5F-5E40-E2A2-99F0F3564FD3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>contlle</RootNamespace>
     <AssemblyName>contlle</AssemblyName>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Messaging" />
@@ -49,6 +50,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin controls\AdminDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminDashboardControl1.Designer.cs">
+      <DependentUpon>AdminDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminMakeSubmitionsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminMakeSubmitionsControl1.Designer.cs">
+      <DependentUpon>AdminMakeSubmitionsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminManageReportsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminManageReportsControl1.Designer.cs">
+      <DependentUpon>AdminManageReportsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminManageUsersControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminManageUsersControl1.Designer.cs">
+      <DependentUpon>AdminManageUsersControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackProceduresControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackProceduresControl1.Designer.cs">
+      <DependentUpon>AdminTrackProceduresControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackTransactionsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin controls\AdminTrackTransactionsControl1.Designer.cs">
+      <DependentUpon>AdminTrackTransactionsControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +98,55 @@
     <Compile Include="AdminRqstSolar.Designer.cs">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminSignup.cs">
+
+    <Compile Include="client controls\ClientDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientDashboardControl1.Designer.cs">
+      <DependentUpon>ClientDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientManageSubscriptionsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientManageSubscriptionsControl1.Designer.cs">
+      <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientMyProfileControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientMyProfileControl1.Designer.cs">
+      <DependentUpon>ClientMyProfileControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentHistoryControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentHistoryControl1.Designer.cs">
+      <DependentUpon>ClientPaymentHistoryControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentMethodControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientPaymentMethodControl1.Designer.cs">
+      <DependentUpon>ClientPaymentMethodControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientShopControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientShopControl1.Designer.cs">
+      <DependentUpon>ClientShopControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client controls\ClientTrackElectrictyControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client controls\ClientTrackElectrictyControl1.Designer.cs">
+      <DependentUpon>ClientTrackElectrictyControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminSignup.Designer.cs">
-      <DependentUpon>AdminSignup.cs</DependentUpon>
+    <Compile Include="ClientHome.Designer.cs">
+      <DependentUpon>ClientHome.cs</DependentUpon>
+
     </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
@@ -110,20 +191,145 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="staff portal\StaffPortalControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staff portal\StaffPortalControl1.Designer.cs">
+      <DependentUpon>StaffPortalControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SpvStockReportsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SpvStockReportsControl1.Designer.cs">
+      <DependentUpon>SpvStockReportsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SpvTransactionsReportControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SpvTransactionsReportControl1.Designer.cs">
+      <DependentUpon>SpvTransactionsReportControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorAssignScheduleControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorAssignScheduleControl1.Designer.cs">
+      <DependentUpon>SupervisorAssignScheduleControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorDashboardControl1.Designer.cs">
+      <DependentUpon>SupervisorDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorManageUsersControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorManageUsersControl1.Designer.cs">
+      <DependentUpon>SupervisorManageUsersControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorScheduleEvaluationControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorScheduleEvaluationControl1.Designer.cs">
+      <DependentUpon>SupervisorScheduleEvaluationControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorStaffReportsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisor controls\SupervisorStaffReportsControl1.Designer.cs">
+      <DependentUpon>SupervisorStaffReportsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupervisorHome.Designer.cs">
+      <DependentUpon>SupervisorHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechDashboardControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechDashboardControl1.Designer.cs">
+      <DependentUpon>TechDashboardControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechDeploymentControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechDeploymentControl1.Designer.cs">
+      <DependentUpon>TechDeploymentControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechFeedbackControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechFeedbackControl1.Designer.cs">
+      <DependentUpon>TechFeedbackControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="technician controls\TechRatingsControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="technician controls\TechRatingsControl1.Designer.cs">
+      <DependentUpon>TechRatingsControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianHome.Designer.cs">
+      <DependentUpon>TechnicianHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="admin controls\AdminDashboardControl1.resx">
+      <DependentUpon>AdminDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminMakeSubmitionsControl1.resx">
+      <DependentUpon>AdminMakeSubmitionsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminManageReportsControl1.resx">
+      <DependentUpon>AdminManageReportsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminManageUsersControl1.resx">
+      <DependentUpon>AdminManageUsersControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminTrackProceduresControl1.resx">
+      <DependentUpon>AdminTrackProceduresControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin controls\AdminTrackTransactionsControl1.resx">
+      <DependentUpon>AdminTrackTransactionsControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminRqstSolar.resx">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminSignup.resx">
-      <DependentUpon>AdminSignup.cs</DependentUpon>
+
+    <EmbeddedResource Include="client controls\ClientDashboardControl1.resx">
+      <DependentUpon>ClientDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientManageSubscriptionsControl1.resx">
+      <DependentUpon>ClientManageSubscriptionsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientMyProfileControl1.resx">
+      <DependentUpon>ClientMyProfileControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientPaymentHistoryControl1.resx">
+      <DependentUpon>ClientPaymentHistoryControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientPaymentMethodControl1.resx">
+      <DependentUpon>ClientPaymentMethodControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientShopControl1.resx">
+      <DependentUpon>ClientShopControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client controls\ClientTrackElectrictyControl1.resx">
+      <DependentUpon>ClientTrackElectrictyControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientHome.resx">
+      <DependentUpon>ClientHome.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -152,6 +358,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff portal\StaffPortalControl1.resx">
+      <DependentUpon>StaffPortalControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SpvStockReportsControl1.resx">
+      <DependentUpon>SpvStockReportsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SpvTransactionsReportControl1.resx">
+      <DependentUpon>SpvTransactionsReportControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorAssignScheduleControl1.resx">
+      <DependentUpon>SupervisorAssignScheduleControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorDashboardControl1.resx">
+      <DependentUpon>SupervisorDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorManageUsersControl1.resx">
+      <DependentUpon>SupervisorManageUsersControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorScheduleEvaluationControl1.resx">
+      <DependentUpon>SupervisorScheduleEvaluationControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisor controls\SupervisorStaffReportsControl1.resx">
+      <DependentUpon>SupervisorStaffReportsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorHome.resx">
+      <DependentUpon>SupervisorHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechDashboardControl1.resx">
+      <DependentUpon>TechDashboardControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechDeploymentControl1.resx">
+      <DependentUpon>TechDeploymentControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechFeedbackControl1.resx">
+      <DependentUpon>TechFeedbackControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="technician controls\TechRatingsControl1.resx">
+      <DependentUpon>TechRatingsControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianHome.resx">
+      <DependentUpon>TechnicianHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
@@ -184,11 +432,47 @@
     <Content Include="Icontrol.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\feedback2.png" />
+    <None Include="Resources\ratings.png" />
+    <None Include="Resources\feedback.png" />
+    <None Include="Resources\taskwork.png" />
+    <None Include="Resources\stock.png" />
+    <None Include="Resources\staffreport.png" />
+    <None Include="Resources\evaluation.png" />
+    <None Include="Resources\assign.png" />
+    <None Include="Resources\paymenthistory.png" />
+    <None Include="Resources\paymentmethod.png" />
+    <None Include="Resources\electricity.png" />
+    <None Include="Resources\shop.png" />
+    <None Include="Resources\subscription.png" />
+    <None Include="Resources\backarrow.png" />
+    <None Include="Resources\492151.jpg" />
+    <None Include="Resources\staff3.png" />
+    <None Include="Resources\staff2.png" />
+    <None Include="Resources\staff.png" />
+    <None Include="Resources\staffportal.png" />
+    <None Include="Resources\roles.png" />
+    <None Include="Resources\sign out1.png" />
+    <None Include="Resources\reports.png" />
+    <None Include="Resources\transaction.png" />
+    <None Include="Resources\procedure.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\submitdocuments.png" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\analytics.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\sign out.png" />
+    <None Include="Resources\documentation.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\home icon.png" />
     <None Include="Resources\3418133.jpg" />
     <None Include="Resources\49215.jpg" />
     <None Include="Resources\e6a0c3b4-7081-49c9-aff8-b1d3f4544fed.jpg" />
     <None Include="Resources\3d-abstract-flowing-twisted-strands.jpg" />
     <None Include="Resources\23084167882082.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
