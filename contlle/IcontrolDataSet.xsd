@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IcontrolConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="IcontrolConnectionString (Settings)" PropertyReference="ApplicationSettings.contlle.Properties.Settings.GlobalReference.Default.IcontrolConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IcontrolConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="IcontrolConnectionString (Settings)" PropertyReference="ApplicationSettings.controller.Properties.Settings.GlobalReference.Default.IcontrolConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MyHouseTableAdapter" GeneratorDataComponentClassName="MyHouseTableAdapter" Name="MyHouse" UserDataComponentName="MyHouseTableAdapter">
@@ -277,7 +277,7 @@
   <xs:element name="IcontrolDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="IcontrolDataSet" msprop:Generator_UserDSName="IcontrolDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="MyHouse" msprop:Generator_TableClassName="MyHouseDataTable" msprop:Generator_TableVarName="tableMyHouse" msprop:Generator_TablePropName="MyHouse" msprop:Generator_RowDeletingName="MyHouseRowDeleting" msprop:Generator_RowChangingName="MyHouseRowChanging" msprop:Generator_RowEvHandlerName="MyHouseRowChangeEventHandler" msprop:Generator_RowDeletedName="MyHouseRowDeleted" msprop:Generator_UserTableName="MyHouse" msprop:Generator_RowChangedName="MyHouseRowChanged" msprop:Generator_RowEvArgName="MyHouseRowChangeEvent" msprop:Generator_RowClassName="MyHouseRow">
+        <xs:element name="MyHouse" msprop:Generator_TableClassName="MyHouseDataTable" msprop:Generator_TableVarName="tableMyHouse" msprop:Generator_RowChangedName="MyHouseRowChanged" msprop:Generator_TablePropName="MyHouse" msprop:Generator_RowDeletingName="MyHouseRowDeleting" msprop:Generator_RowChangingName="MyHouseRowChanging" msprop:Generator_RowEvHandlerName="MyHouseRowChangeEventHandler" msprop:Generator_RowDeletedName="MyHouseRowDeleted" msprop:Generator_RowClassName="MyHouseRow" msprop:Generator_UserTableName="MyHouse" msprop:Generator_RowEvArgName="MyHouseRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -335,7 +335,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Solar" msprop:Generator_TableClassName="SolarDataTable" msprop:Generator_TableVarName="tableSolar" msprop:Generator_TablePropName="Solar" msprop:Generator_RowDeletingName="SolarRowDeleting" msprop:Generator_RowChangingName="SolarRowChanging" msprop:Generator_RowEvHandlerName="SolarRowChangeEventHandler" msprop:Generator_RowDeletedName="SolarRowDeleted" msprop:Generator_UserTableName="Solar" msprop:Generator_RowChangedName="SolarRowChanged" msprop:Generator_RowEvArgName="SolarRowChangeEvent" msprop:Generator_RowClassName="SolarRow">
+        <xs:element name="Solar" msprop:Generator_TableClassName="SolarDataTable" msprop:Generator_TableVarName="tableSolar" msprop:Generator_RowChangedName="SolarRowChanged" msprop:Generator_TablePropName="Solar" msprop:Generator_RowDeletingName="SolarRowDeleting" msprop:Generator_RowChangingName="SolarRowChanging" msprop:Generator_RowEvHandlerName="SolarRowChangeEventHandler" msprop:Generator_RowDeletedName="SolarRowDeleted" msprop:Generator_RowClassName="SolarRow" msprop:Generator_UserTableName="Solar" msprop:Generator_RowEvArgName="SolarRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -392,7 +392,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="User" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser" msprop:Generator_TablePropName="User" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_UserTableName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_RowClassName="UserRow">
+        <xs:element name="User" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_TablePropName="User" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowClassName="UserRow" msprop:Generator_UserTableName="User" msprop:Generator_RowEvArgName="UserRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">

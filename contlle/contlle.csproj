@@ -98,6 +98,7 @@
     <Compile Include="AdminRqstSolar.Designer.cs">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </Compile>
+
     <Compile Include="client controls\ClientDashboardControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +146,7 @@
     </Compile>
     <Compile Include="ClientHome.Designer.cs">
       <DependentUpon>ClientHome.cs</DependentUpon>
+
     </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
@@ -303,6 +305,7 @@
     <EmbeddedResource Include="AdminRqstSolar.resx">
       <DependentUpon>AdminRqstSolar.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="client controls\ClientDashboardControl1.resx">
       <DependentUpon>ClientDashboardControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +329,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientHome.resx">
       <DependentUpon>ClientHome.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>

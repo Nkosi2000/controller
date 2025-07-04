@@ -7,10 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using System.Data.SqlClient;
 using System.Configuration;
 using contlle.staff_portal;
 using contlle;
+
 
 namespace contlle
 {
@@ -21,10 +23,11 @@ namespace contlle
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public static string HashPassword(string password)
         {
-        
+            using (SHA256 sha256 = SHA256.Create())
             {
+
                 string connectionString = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
                 string query = "SELECT COUNT(*) FROM [Users] WHERE [EmailAddress] = @EmailAddress AND [Password] = @Password";
 
@@ -34,29 +37,7 @@ namespace contlle
                     cmd.Parameters.AddWithValue("@EmailAddress", txtEmailAddress.Text.Trim());
                     cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
 
-                    try
-                    {
-                        con.Open();
-                        int userCount = Convert.ToInt32(cmd.ExecuteScalar());
-
-                        if (userCount > 0)
-                        {
-                            //MessageBox.Show("Login successful.");
-                            // Proceed to the main application form
-                            this.Hide();
-                            new ClientHome().Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid username or password.");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"An error occurred: {ex.Message}");
-                    }
-                }
-            }
+          
 
         }
 

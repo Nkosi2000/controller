@@ -35,6 +35,7 @@ namespace contlle
             this.lnkTsCs = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+
             this.label6 = new System.Windows.Forms.Label();
             this.lblAlreadyHaveAnAccount = new System.Windows.Forms.Label();
             this.logotext = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@ namespace contlle
             this.lblAlternativeNumber = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,11 +67,13 @@ namespace contlle
             // 
             // panel1
             // 
+
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lblAlternativeNumber);
             this.panel1.Controls.Add(this.txtAlternativeNumber);
             this.panel1.Controls.Add(this.lblLastName);
             this.panel1.Controls.Add(this.txtLastName);
+
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblwarning);
             this.panel1.Controls.Add(this.lnkTsCs);
@@ -99,7 +103,7 @@ namespace contlle
             this.panel1.Size = new System.Drawing.Size(714, 476);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+// label1
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -157,6 +161,7 @@ namespace contlle
             this.panel2.ForeColor = System.Drawing.Color.SeaGreen;
             this.panel2.Location = new System.Drawing.Point(91, 7);
             this.panel2.Name = "panel2";
+
             this.panel2.Size = new System.Drawing.Size(537, 3);
             this.panel2.TabIndex = 17;
             // 
@@ -420,6 +425,7 @@ namespace contlle
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
+
             // 
             // Signup
             // 
@@ -465,6 +471,7 @@ namespace contlle
         private System.Windows.Forms.Label lblAlreadyHaveAnAccount;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+
         private System.Windows.Forms.LinkLabel lnkTsCs;
         private System.Windows.Forms.Label lblwarning;
         private System.Windows.Forms.Label label1;
@@ -472,5 +479,6 @@ namespace contlle
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblAlternativeNumber;
         private System.Windows.Forms.TextBox txtAlternativeNumber;
+
     }
 }

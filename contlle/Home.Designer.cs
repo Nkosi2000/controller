@@ -321,9 +321,10 @@ namespace contlle
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
+
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::contlle.Properties.Resources._3418133;
+            
             this.pictureBox1.Location = new System.Drawing.Point(62, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 43);

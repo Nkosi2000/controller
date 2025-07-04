@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using System.Data.SqlClient;
 using System.Configuration;
+
 
 
 namespace contlle
@@ -19,12 +21,14 @@ namespace contlle
         {
             InitializeComponent();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
             string connectionString = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
 
             using (SqlConnection con = new SqlConnection(connectionString))
+
             {
                 con.Open();
                 string fullname = txtFullName.Text.Trim();
@@ -35,6 +39,19 @@ namespace contlle
                 string createpassword = txtCreatePassword.Text.Trim();
                 string confirmpassword = txtConfirmPassword.Text.Trim();
 
+                string checkQuery = "SELECT COUNT(*) FROM [Userz] WHERE [Emailz] = ?";
+                using (OleDbCommand checkCmd = new OleDbCommand(checkQuery, con))
+                {
+                    checkCmd.Parameters.Add("?", OleDbType.VarWChar, 255).Value = emal;
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Email is already registered.");
+                        return;
+                    }
+                }
+
+
                 // Validate user inputs
                 if (string.IsNullOrEmpty(fullname) || string.IsNullOrEmpty(lastname) || string.IsNullOrEmpty(phonenumber) || string.IsNullOrEmpty(emailaddress) || string.IsNullOrEmpty(createpassword) || string.IsNullOrEmpty(confirmpassword))
                 {
@@ -42,22 +59,30 @@ namespace contlle
                     return;
                 }
 
+
                 if (createpassword != confirmpassword)
+
                 {
                     MessageBox.Show("Passwords do not match.");
                     return;
                 }
+               // textBox4.PasswordChar = '*';
+                //textBox5.PasswordChar = '*';
+
 
                 string query = "INSERT INTO [Users] ([FullName], [LastName], [PhoneNumber], [AlternativeNumber], [EmailAddress], [Password]) VALUES (@FullName, @LastName, @PhoneNumber, @AlternativeNumber, @EmailAddress, @Password)";
 
+
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
+
                     cmd.Parameters.AddWithValue("FullName", fullname);
                     cmd.Parameters.AddWithValue("LastName", lastname);
                     cmd.Parameters.AddWithValue("PhoneNumber", phonenumber);
                     cmd.Parameters.AddWithValue("AlternativeNumber", alternativenumber);
                     cmd.Parameters.AddWithValue("EmailAddress", emailaddress);
                     cmd.Parameters.AddWithValue("Password", confirmpassword);
+
 
                     try
                     {
@@ -86,6 +111,7 @@ namespace contlle
             new Home().Show();
         }
 
+
         private void Signup_Load(object sender, EventArgs e)
         {
 
@@ -99,7 +125,10 @@ namespace contlle
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+
         }
     }
+    
+    
 
 }
